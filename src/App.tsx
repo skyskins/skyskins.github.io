@@ -36,7 +36,7 @@ function App() {
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch('/assets/registry.json')
+    fetch(`${import.meta.env.BASE_URL}assets/registry.json`)
       .then((res) => res.json())
       .then((data: Record<string, RegistryEntry>) => {
         setRegistry(data);
