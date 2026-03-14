@@ -1,8 +1,31 @@
 import { Filter, Palette, Shield, Sparkles } from 'lucide-react';
-import { getCosmeticTypeLabel, type CatalogItem, type CosmeticKind } from '../lib/cosmetics';
+import type { CatalogItem } from '../lib/cosmetics';
 import { stripMinecraftFormatting } from './skinRarity';
 
-export type CosmeticTypeFilter = 'all' | CosmeticKind;
+export type BrowseFilterKey = 'all' | 'petSkin' | 'dye' | `helmet:${string}`;
+
+function slugifyFilterValue(value: string) {
+  return value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+export function getHelmetCategoryFilterKey(category: string): BrowseFilterKey {
+  return `helmet:${slugifyFilterValue(category || 'helmet')}`;
+}
+
+export function getBrowseFilterKey(item: CatalogItem): BrowseFilterKey {
+  switch (item.type) {
+    case 'petSkin':
+      return 'petSkin';
+    case 'dye':
+      return 'dye';
+    case 'helmetSkin':
+      return getHelmetCategoryFilterKey(item.category);
+    default: {
+      const exhaustiveCheck: never = item.type;
+      return exhaustiveCheck;
+    }
+  }
+}
 
 export function getBrowseDescription(item: CatalogItem) {
   const description = item.description?.trim();
@@ -18,7 +41,7 @@ export function getBrowseDescription(item: CatalogItem) {
   return description;
 }
 
-export function getTypeIcon(type: CosmeticTypeFilter) {
+export function getTypeIcon(type: BrowseFilterKey) {
   switch (type) {
     case 'all':
       return Filter;
@@ -26,18 +49,9 @@ export function getTypeIcon(type: CosmeticTypeFilter) {
       return Sparkles;
     case 'dye':
       return Palette;
-    case 'helmetSkin':
+    default:
       return Shield;
-    default: {
-      const exhaustiveCheck: never = type;
-      return exhaustiveCheck;
-    }
   }
-}
-
-export function getTypeFilterLabel(type: CosmeticTypeFilter) {
-  if (type === 'all') return 'All';
-  return getCosmeticTypeLabel(type);
 }
 
 export function matchesBrowseQuery(item: CatalogItem, query: string) {

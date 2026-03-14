@@ -1,0 +1,1364 @@
+{
+  "variants": [
+    {
+      "id": "6_ANNIVERSARY_BARN_SKIN",
+      "name": "6th Anniversary Barn Skin",
+      "texturePath": "/assets/helmets/skins/185484498537f510f17da60558b0cff50e671a7d239b816bab63e82706736ea8.png",
+      "lore": "§7Consume this item to unlock the §66th\n§6Anniversary Barn Skin §7on §aThe\n§aGarden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "ANGLER_DEEP_SEA",
+      "name": "Deep Sea Skin",
+      "texturePath": "/assets/helmets/skins/afb849463dcb35acf1d88287606a13a17efe6697ee4c88fda072591beda60d2a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §fAngler\n§fHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "AWAKENED_EYE_BACKPACK",
+      "name": "Awakened Eye Backpack Skin",
+      "texturePath": "/assets/helmets/skins/8d59f4ddbb2a094c1da7654c1ebf9d8515a2b75a220fd73a65135072e38d4f60.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "BABYSEAL_BACKPACK",
+      "name": "Baby Seal Backpack Skin",
+      "texturePath": "/assets/helmets/skins/77dcbba3ebf5fc13b7313907092294a58e9f3a839e5bba6daae8d8638dafbd6c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "BACKPACK_CAT_O_LANTERN",
+      "name": "Cat-o-Lantern Skin",
+      "texturePath": "/assets/helmets/skins/389b56b5f1eb9b7d6f3be300d7ebf337a40c21f9c88e68e7d1ef7d333050030.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BACKPACK_CAULDRON",
+      "name": "Cauldron Skin",
+      "texturePath": "/assets/helmets/skins/dde2553ef1b424c02d4ecdf0f66e0e68525fb1d246160ba9753fa28be4989f88.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BACKPACK_COOLER",
+      "name": "Cooler Skin",
+      "texturePath": "/assets/helmets/skins/8cbe9ebd0f5cfd38e6f0fc34eb4aaf57ae45bb15390503cd0664f3b1224cebc8.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BAG_OF_COAL_BACKPACK",
+      "name": "Bag of Coal Backpack Skin",
+      "texturePath": "/assets/helmets/skins/e92dfa61a324207488e45c79d0355d2163b7a3b35f0e958f88f5423484360978.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n\n§7§7This skin can be applied to\n§7§aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "BAT_PERSON_HERO",
+      "name": "Hero Skin",
+      "texturePath": "/assets/helmets/skins/b2a579e72d4ae0d42b48ada87d4cb323c548e6954a32451a3872c1b2ee1cdaa.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Bat\n§6Person Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BEACH_BALL_BARN_SKIN",
+      "name": "Beach Ball Barn Skin",
+      "texturePath": "/assets/helmets/skins/d2057057b7095cdd8a60a5c4edec2cd7f1fd5d6479ebed0add4ce115a3338c2f.png",
+      "lore": "§7Consume this item to unlock the\n§6Beach Ball Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "BEACH_BALL_FLUX",
+      "name": "Beach Ball Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/a794284953646833c49db0bae137cc93a774cb6ec8c53d1bcef6cd124a5a71ca.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "BEACHSIDE_RESORT_BARN_SKIN",
+      "name": "Beachside Resort Barn Skin",
+      "texturePath": "/assets/helmets/skins/bedf9387df35415867d19b7290e610d9da356053261194fca1eef6cfdc9122b.png",
+      "lore": "§7Consume this item to unlock the\n§6Beachside Resort Barn Skin §7on §aThe\n§aGarden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "BEAUTIFALL_CABIN_BARN_SKIN",
+      "name": "Beautifall Cabin Barn Skin",
+      "texturePath": "/assets/helmets/skins/c8807fe3d50b25ff440e2de36be837f559ec9f965a36ee3ac8eeec6851292544.png",
+      "lore": "§7Consume this item to unlock the\n§6Beautifall Cabin Barn Skin §7on §aThe\n§aGarden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "BERSERKER_SANDSTORM_CAT",
+      "name": "Sandstorm Cat Skin",
+      "texturePath": "/assets/helmets/skins/620d52f4b9510c96d6e962e5a302a993f16a427453a723700f9138032f0c3d13.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to\n§5Berserker Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BIOHAZARD_PUMPKIN_SPICE",
+      "name": "Pumpkin Spice Skin",
+      "texturePath": "/assets/helmets/skins/18827cfc8c504d00ad676fe7a5ebf70ac4826e6db90a00eb282e5738a6cd558e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBiohazard\n§aHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BIOHAZARD_SPACE_BLACK_ICE",
+      "name": "Black Ice Space Skin",
+      "texturePath": "/assets/helmets/skins/4779324d60c125c4714929d706b1f2dd57ebefa7d6a0a0e6da07f50c88e8610.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBiohazard\n§aHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BIOHAZARD_SPACE_RED",
+      "name": "Red Space Skin",
+      "texturePath": "/assets/helmets/skins/3a4dedffa98dc3ba3afb5ba25c4d537b1745ef4d51ae90f4aa7646c9b6c9adda.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBiohazard\n§aHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BIOHAZARD_SPACE_SNOWFLAKE",
+      "name": "Snowflake Space Skin",
+      "texturePath": "/assets/helmets/skins/b1c813e9cfc81a0e76e6127db76402ccc518a6d8d00147e155b29be2b0e8470e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBiohazard\n§aHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BIOHAZARD_SPACE_TEAL",
+      "name": "Teal Space Skin",
+      "texturePath": "/assets/helmets/skins/426e493964bcb91075989e270ea45fa4e2f38b8fc4faf8794e1659716d18955c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBiohazard\n§aHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BIOHAZARD_SPACE_YELLOW",
+      "name": "Yellow Space Skin",
+      "texturePath": "/assets/helmets/skins/1b86061108ce99a017b2bf962c3233214bc0c50f8de423c2232cec7a3e11e7cf.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBiohazard\n§aHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BLAZING_CRIMSON",
+      "name": "Blazing Crimson Helmet Skin",
+      "texturePath": "/assets/helmets/skins/a029882e71a945db3d9f07cf1261f73f8b73788dc6694536909a9ebcb25aab1e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to any tier\n§7of §6Crimson Helmet§7, §6Aurora Helmet§7,\n§6Terror Helmet§7, §6Fervor Helmet§7, and\n§6Hollow Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between §a19\n§7blazing variants.\n§8▶ §7Keeps track of the total §cKuudra\n§cChests §7opened while wearing this skin.\n§8▶ §7Changes the look of your §cCrimson\n§cSwipes §7depending on your currently\n§7selected skin.\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BLUE_EGG",
+      "name": "Blue Egged Skin",
+      "texturePath": "/assets/helmets/skins/1e1cd67d9ccfe575d78b7dc198358cbb5ec3f3e41db82458c075d5f813bbf0f9.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BONZO_MASK_JESTER",
+      "name": "Jester Bonzo's Mask Skin",
+      "texturePath": "/assets/helmets/skins/1d93b180a1c707825bb901c6dcd8d16e761b37994527f7f75e3f32feafea9484.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Bonzo's\n§9Mask§7 and §9⚚ Bonzo's Mask§7.\n\n§aThis skin is animated and has a\n§aspecial ability effect!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "BUTTERFLY_BARN_SKIN",
+      "name": "Butterfly Barn Skin",
+      "texturePath": "/assets/helmets/skins/f38c6f9f4ab90b376e6190440723450ee098cdb681d13220e4bb337418bbf650.png",
+      "lore": "§7Consume this item to unlock the\n§5Butterfly Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "CADUCEUS_MENDING_CROWN",
+      "name": "Caduceus Mender Skin",
+      "texturePath": "/assets/helmets/skins/d2ee5c06d71793c0605ed71017296c3059101942f45336677ef3ecd4aefec078.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Mender\n§9Helmet§7, §5Mender Fedora§7, and §5Mender\n§5Crown§7.\n\n§aThis skin is swappable between 5\n§asnakelike variants!\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "CAMPFIRE_FLUX",
+      "name": "Campfire Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/f4c08c53a18f26a21ca87138b97f58ccb58bd71ac712d68686312c724b52e271.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between §a15\n§7blazing campfires!\n§8▶ §7Displays the amount of players\n§7that have been buffed by this orb!\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "CHERRY_BLOSSOM_FLUX",
+      "name": "Cherry Blossom Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/301743bef1504246202d4144e641b00cea07f82d703c6c2aa469f4ef7e54d6d0.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "CHOCOLATE_FACTORY_BARN_SKIN",
+      "name": "Chocolate Factory Barn Skin",
+      "texturePath": "/assets/helmets/skins/af90da40c557af4ac01d39b6733e204c74ae9fee8c2bc40be1fd4f28f837d52.png",
+      "lore": "§7Consume this item to unlock the\n§6Chocolate Factory Barn Skin §7on §aThe\n§aGarden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "CHRISTMAS_STOCKING_BACKPACK",
+      "name": "Christmas Stocking Backpack Skin",
+      "texturePath": "/assets/helmets/skins/d4f9072d99d13fb6f955fee01b30774967d2a2e0a80a91b889b85c79dc8a5a55.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n\n§7§7This skin can be applied to\n§7§aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "CORRUPT_WITHER_GOGGLES",
+      "name": "Corrupt Wither Goggles Helmet Skin",
+      "texturePath": "/assets/helmets/skins/f9c0e9be800a69107ba0e56d1264df0eb92dff0d21814f6767b26a378086b503.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Dark\n§9Goggles§7, §5Shadow Goggles§7, and §5Wither\n§5Goggles§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between 10\n§7evil variants.\n§8▶ §7Keeps track of the total §cDungeon\n§cScore §7earned while wearing this skin.\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "DITTO_SKIN",
+      "name": "Ditto Skin",
+      "texturePath": "/assets/helmets/skins/75aa859ec3f565eb006ed7df26419deac9a15420d09cfd3bdeec40ea07d1366a.png",
+      "lore": "§7§7Spawn an NPC with the captured skin.\n\n§6Ability: Copycat \n§7Copies the skin of an unsuspecting\n§7player.\n§8Cooldown: §a10s\n\n§8§l* §8Co-op Soulbound §8§l*\n§7§cRequires §5Ⓑ Bingo Rank III§c!\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "DIVER_FROZEN",
+      "name": "Frozen Diver Skin",
+      "texturePath": "/assets/helmets/skins/a3098bf9df4a68f30af1cec4e721f1a0e1d2d7bbfdd5b1791570724550f7ae9e.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7§7This skin can be applied to §6Diver's\n§6Mask§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "DIVER_PUFFER",
+      "name": "Puffer Fish Skin",
+      "texturePath": "/assets/helmets/skins/5c6f54fc06fc388e048d489c049586eaae760101591e3064d0506894482b6b55.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Diver's\n§5Mask§7.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "DOUBLE_GUMBALL_FLUX",
+      "name": "Gumball Machine Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/f5132d454e3f092c8af1c5c24c5a537d9d91ee7250d33edd43d76dc19df330da.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is stacked two tall, and\n§aswappable between 16 variants!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "DOUBLE_ICE_CREAM_FLUX",
+      "name": "Ice Cream Cone Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/2064c57fef495b1dc133210c215e743b0903f49f1c28d08141d8823ccc480ee2.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is stacked two tall, and\n§aswappable between 12 variants!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "DRAGON_EGG_BACKPACK",
+      "name": "Dragon Egg Backpack Skin",
+      "texturePath": "/assets/helmets/skins/ee3a8aa855541e1852c129ab80b185fdaeb84f0db7f8ba7c14df0150c7d24b9d.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "DUMPSTER_DIVER",
+      "name": "Dumpster Diver Helmet Skin",
+      "texturePath": "/assets/helmets/skins/c390f2a38400a44bf6c131938e32c17de5d2ddeef6bbec1a17dc1e156867f33a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Diver's\n§5Mask§7 and §6Abyssal Helmet§7.\n\n§7This skin is swappable between §a20\n§7dumpster divin' variants!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "ENDERPACK",
+      "name": "Enderpack Skin",
+      "texturePath": "/assets/helmets/skins/7f977e69164ecdddbd1f9353653b69035ad2517b0822ca6be40cfbb7aa2227e4.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FAIRY_BACKPACK",
+      "name": "Fairy Backpack Skin",
+      "texturePath": "/assets/helmets/skins/8d938352052f9d6e14a2782a749c67828db4a9a5b0b33ae047d151b711c2c57b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "FERMENTO_BLOOM",
+      "name": "Bloom Skin",
+      "texturePath": "/assets/helmets/skins/6c09ab35d232fe57e0c6218241a7b2fc31e02171d9253402bbcbf4e2a1f36a40.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Fermento\n§6Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FERMENTO_LEAF",
+      "name": "Leaf Skin",
+      "texturePath": "/assets/helmets/skins/2bfc4d48d7c53a6e8fe314ec3282271a5bde11215500bd901fb205e27df7be3b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Fermento\n§6Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FERMENTO_ULTIMATE",
+      "name": "Harvester Helmet Skin",
+      "texturePath": "/assets/helmets/skins/6cc7a104895951c15ec2f5ed0091e45f3467e78249b3369c269a3c570d3d3af7.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Fermento\n§6Helmet§7.\n\n§aThis skin will allow you to swap\n§abetween multiple variants of your\n§ahelmet!\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FINAL_DESTINATION_ENDER_KNIGHT",
+      "name": "Ender Knight Skin",
+      "texturePath": "/assets/helmets/skins/f6eaa1fd9d2d49d06a894798d3b145d3ae4dcca038b7da718c7b83a66ef264f0.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Final\n§6Destination Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FLORAL_FLUX",
+      "name": "Floral Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/112f8aba55b16a526ccfe9effc65900118ba31bd501c82df3f80b47f1480693a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "FLOWER_POT_BARN_SKIN",
+      "name": "Flower Pot Barn Skin",
+      "texturePath": "/assets/helmets/skins/5f69db915963010a67330439845a98d2f08a15a0e1de461719767775d15ef844.png",
+      "lore": "§7Consume this item to unlock the\n§5Flower Pot Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "FROG_BARN_SKIN",
+      "name": "Frog Barn Skin",
+      "texturePath": "/assets/helmets/skins/a55c1ba898398f95fce3c81924dcf5776701cf20de9fe910618d5839ba4b35a7.png",
+      "lore": "§7Consume this item to unlock the §6Frog\n§6Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "FROZEN_BLAZE_FROST_KNIGHT",
+      "name": "Frost Knight Skin",
+      "texturePath": "/assets/helmets/skins/46c419999da5ff4167f7d90c929e01e3c822832e1bee01069325d3991ec61fb3.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Frozen\n§6Blaze Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FROZEN_BLAZE_ICEBERG",
+      "name": "Iceberg Skin",
+      "texturePath": "/assets/helmets/skins/445b140208ea0b23655f01e9ae7ea0fc7d83a3c0a44c03be2a2a29d292d4ec20.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n\n§7This skin can be applied to\n§6Frozen Blaze Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "FROZEN_BLAZE_ICICLE",
+      "name": "Icicle Skin",
+      "texturePath": "/assets/helmets/skins/e13c25640705136cf776784910c63a0f160f5af6a38ccacfbb3071f247b82004.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Frozen\n§6Blaze Helmet§7.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GEM_FLUX",
+      "name": "Gem Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/6cd9fed8b9384278adb61cf0d7298906cbd5dd5452df7c551c6b3e2c17311b89.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated, and frequently\n§athrows items all over the place!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "GEMSTONE_DIVAN",
+      "name": "Gemstone Divan Helmet Skin",
+      "texturePath": "/assets/helmets/skins/3917458bb844a8b330710207f333519cb231997c6a772998fdf8eeda9b32aa7.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Helmet of\n§6Divan§7.\n\n§aThis skin will allow you to swap\n§abetween 12 favorite animated\n§agemstones!\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GIFT_BLACK_BACKPACK",
+      "name": "Black Gift Backpack Skin",
+      "texturePath": "/assets/helmets/skins/f425ff8066e699d515056f78271546baa88d781f1a894653a0f4019e8b14bcb4.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "GIFT_BLUE_BACKPACK",
+      "name": "Blue Gift Backpack Skin",
+      "texturePath": "/assets/helmets/skins/bb09df8f3875b95c9d057728152f9f44e540fd7af825df44b3db4155cceec429.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "GIFT_GOLD_BACKPACK",
+      "name": "Gold Gift Backpack Skin",
+      "texturePath": "/assets/helmets/skins/9d5c38fb56320fa13637acfe82077b6d780b889f7742d69bcc6e5ae035eafd27.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "GIFT_GREEN_BACKPACK",
+      "name": "Green Gift Backpack Skin",
+      "texturePath": "/assets/helmets/skins/e7866805f875339efb94e667837c193f2a1bcedec8b41babbbf0bb7a7c8f6148.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n\n§7This skin can be applied to\n§aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "GIFT_PURPLE_BACKPACK",
+      "name": "Purple Gift Backpack Skin",
+      "texturePath": "/assets/helmets/skins/40894781820f81b706a081577d7391a6c30f2c474b087aca14d54b6f659f2ea7.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "GIFT_WHITE_BACKPACK",
+      "name": "White Gift Backpack Skin",
+      "texturePath": "/assets/helmets/skins/5df2835975acee173426c5c65233f4c1b506a76dfcd418e30076536c8ef3d39c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "GINGERBREAD_VILLAGE_BARN_SKIN",
+      "name": "Gingerbread Village Barn Skin",
+      "texturePath": "/assets/helmets/skins/52b452d9d51c2eec0e0101ab4515fce540c40a7685be6d74ab5f8b563170fd48.png",
+      "lore": "§7Consume this item to unlock the\n§6Gingerbread Village Barn Skin §7on §aThe\n§aGarden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "GLACIAL_DIVAN",
+      "name": "Glacial Divan Helmet Skin",
+      "texturePath": "/assets/helmets/skins/673dadedfd0675dc741c4da98518d861f3883c5e3cc2eb640257d06720e449d5.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Helmet of\n§6Divan§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between §a20\n§7glacial variants.\n§8▶ §7Keeps track of every §5Pristine\n§5Proc §7obtained wearing this skin.\n§8▶ §7Displays a §6special particle effect\n§7when you have §bCold§7.\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GLACITE_PALACE_GREENHOUSE_SKIN",
+      "name": "Glacite Palace Greenhouse Skin",
+      "texturePath": "/assets/helmets/skins/39a1d83c1b380a5bd6ab8fadd7869a163a50ed6ef0730c0bcf105e684bc4bd80.png",
+      "lore": "§7Consume this item to unlock the\n§6Glacite Palace Greenhouse Skin §7on\n§aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Greenhouse"
+    },
+    {
+      "id": "GLISTENING_MELON_FLUX",
+      "name": "Glistening Melon Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/c91229c5220db0756b8248cc2920c077f2edad6afb397cc26138296309c200bb.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "GLOSSY_MINERAL_HELMET_ROYAL",
+      "name": "Royal Skin",
+      "texturePath": "/assets/helmets/skins/74bc9d6c3b23fc7f88842fdf05bc2cddb9934efc396d043d2f95301523015018.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Mineral\n§5Helmet§7 and §6Glossy Mineral Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GLOWING_GRAPE_FLUX",
+      "name": "Glowing Grape Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/e44c359f6f28c5fa6c5a09d8c57fa4174da4e8ae110e5f2cd7e93f2e76176cd5.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "GOBLIN_HELMET_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/7bc069645a0fa512d9cd724048fb418e03e042397870116c3e44a3a76d9f759.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Goblin\n§9Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GOBLIN_HELMET_DIAMOND",
+      "name": "Diamond Skin",
+      "texturePath": "/assets/helmets/skins/bd48d7e23b19bd13311aa951c3b7209d5d5bfef9b8605c4ae3851976b233479e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Goblin\n§9Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GOBLIN_HELMET_GENIE",
+      "name": "Genie Skin",
+      "texturePath": "/assets/helmets/skins/60414fa9c0a42f3aad83b1dce7e5706c4a34413d8cbb1d49ccd2b4ba1089bef1.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Goblin\n§9Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GOBLIN_HELMET_GOLDEN",
+      "name": "Golden Skin",
+      "texturePath": "/assets/helmets/skins/d16c0c551f586893e9397c8886bf090ad54857da0a0bbca1b194e9a229933c2d.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Goblin\n§9Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GOBLIN_HELMET_THIEF",
+      "name": "Thief Skin",
+      "texturePath": "/assets/helmets/skins/29df8b7c806a2a02b0171f8ea28fc3eec0667bc9e8da22b9873827434f84b562.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Goblin\n§9Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GOLDEN_ANCIENT_EGG_FLUX",
+      "name": "Golden Turtle Egg Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/ff71afd87f7d2eddd26f4351b9156356743418c34d1348c9b3c5afb99c6b8339.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "GOLDEN_APPLE_FLUX",
+      "name": "Golden Apple Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/b54a09c8e36cc093e3753287a5cac4b37e5654ca518c6582ab99caa95134595e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "GOLDOR_CELESTIAL",
+      "name": "Celestial Goldor's Helmet Skin",
+      "texturePath": "/assets/helmets/skins/8e406f4b1311ecc998b4d7775579d8cc51846fa66f2e4b7637f5593dd8bcdc1e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Goldor's\n§6Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GREAT_SHARK_MAGMA_LORD",
+      "name": "Great Shark Magma Lord Skin",
+      "texturePath": "/assets/helmets/skins/5fe4b98c1ceeb067f2e84d24115e5216b5d725c616d66a22aaab377c2a7b2615.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Magma\n§6Lord Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between 14\n§7extraordinarily colorful sharks!\n§8▶ §7Modifies the look of fished up §aFire\n§aEel§7 and §aTaurus §7Sea Creatures\n§7based on the currently selected skin!\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "GREEN_EGG",
+      "name": "Green Egged Skin",
+      "texturePath": "/assets/helmets/skins/8b88e84dd23e95153c9a7c21ae9ba33fbef85cb7704f97616cd12268164c608e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HAMBAGGER_BACKPACK",
+      "name": "Hambagger Backpack Skin",
+      "texturePath": "/assets/helmets/skins/e1b0e992037ae3793e46e1fb255204c020504603ce9e8e40813197085d905556.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "HOLIDAY_CHEST_ENDER_BACKPACK",
+      "name": "Ender Holiday Chest Skin",
+      "texturePath": "/assets/helmets/skins/5c7b9b888172ba55d43f7b20d00c149b53bafad9f358a949fb17696b8e4d3ebf.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLIDAY_CHEST_GREEN_BACKPACK",
+      "name": "Green Holiday Chest Skin",
+      "texturePath": "/assets/helmets/skins/9cfabb355903c2bc53f88852d4df0966c9499b74c2473899ddd5f77273e68681.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLIDAY_CHEST_RED_BACKPACK",
+      "name": "Red Holiday Chest Skin",
+      "texturePath": "/assets/helmets/skins/f5c9d31743f4d36c5a8917a1819f2fae0ab083822e4fabf16e88912811e676e0.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLIDAY_CHEST_TEAL_BACKPACK",
+      "name": "Teal Holiday Chest Skin",
+      "texturePath": "/assets/helmets/skins/933a65138f241fdccae280c169f0d9320cdf33b26dedb620caaa27c6c317e50a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLIDAY_CHEST_YELLOW_BACKPACK",
+      "name": "Yellow Holiday Chest Skin",
+      "texturePath": "/assets/helmets/skins/d0d3c304ff018fce65099eaed9d68a4c49014ae706176f8ee18772a7b362f585.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLY_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/1266946f84b27796a1c7b1b6068efb77481b8ad8ba4fc1eef35cc975e06afb42.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Holy\n§6Dragon Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLY_DRAGON_DRAKE",
+      "name": "Holy Drake Skin",
+      "texturePath": "/assets/helmets/skins/105d89acc6bdd0a954a13cb210c4df9ad8f881763084d92e6777ddaa71f302d1.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Holy\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOLY_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/c96696eb13cced8f5c521892d90fe8e2b129469520ade8d1d9f87225e7179761.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Holy\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "HOT_COCOA_BACKPACK",
+      "name": "Hot Cocoa Backpack Skin",
+      "texturePath": "/assets/helmets/skins/a17ebaab0e04858220a62ec14032f947fcba3c31f3dd7a641eda6c372ce96cc6.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "JERRY_BARN_SKIN",
+      "name": "Jerry Barn Skin",
+      "texturePath": "/assets/helmets/skins/45f729736996a38e186fe9fe7f5a04b387ed03f3871ecc82fa78d8a2bdd31109.png",
+      "lore": "§7Consume this item to unlock the\n§6Jerry Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENJERRY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "LOVELY_PICNIC_BARN_SKIN",
+      "name": "Lovely Picnic Barn Skin",
+      "texturePath": "/assets/helmets/skins/d09dacd9207fa30b1a90e1a04c67bd88cebcbdd43b107fb1fa292932e44851cc.png",
+      "lore": "§7Consume this item to unlock the\n§6Lovely Picnic Barn Skin §7on §aThe\n§aGarden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "LUCKY_BARN_SKIN",
+      "name": "Lucky Barn Skin",
+      "texturePath": "/assets/helmets/skins/bbdf9fb7f2ac5987ecfbd173e8b9711d99b58116f8ca4d77d0af8b389f.png",
+      "lore": "§7§7Consume this item to unlock the\n§7§6Lucky Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "LUNAR_RABBIT_HAT",
+      "name": "Lunar Rabbit Hat Skin",
+      "texturePath": "/assets/helmets/skins/550ce17991dcf18ce223cdf2103025a18b9d1750db2ad0924d6186b18dacb288.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRabbit Hat§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "MAGIC_CUBE_FLUX",
+      "name": "Magic Cube Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/838100e8151b4033918935b6dd00f0709a3fa8167d4c2ecba59ef41727031bc.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "MAGMA_LORD_RAGNAROK",
+      "name": "Ragnarok's Bane Magma Lord Skin",
+      "texturePath": "/assets/helmets/skins/c552f85426e7c97dd8333ab2f44b1634b315a1dd3f51f931b0e7bfed517e60a4.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Magma\n§6Lord Helmet§7.\n\n§aThis skin will allow you to swap\n§abetween 15 favorite fishy versions!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "MAIN_STREET_BARN_SKIN",
+      "name": "Main Street Barn Skin",
+      "texturePath": "/assets/helmets/skins/cfe2449d227fa991f2a7102709d9982de1f78f41182628bdae39462254c681a3.png",
+      "lore": "§7Consume this item to unlock the §6Main\n§6Street Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "MASTIFF_PUPPY",
+      "name": "Puppy Skin",
+      "texturePath": "/assets/helmets/skins/f22f67e5fe5badb3a0c231860d2b68682ced4afe92f8d1adf822ce9cd4b0a740.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Mastiff\n§5Crown§7.\n\n§9§lRARE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "MAXOR_CELESTIAL",
+      "name": "Celestial Maxor's Helmet Skin",
+      "texturePath": "/assets/helmets/skins/238bff3640cc3ac4db012c50179d2cabba518e5e4522eb3cdc37fe2daf94e49f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Maxor's\n§6Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "MERCENARY_KNIGHT",
+      "name": "Knight Skin",
+      "texturePath": "/assets/helmets/skins/fb029244042ee6941d010755e30ab5f4d095a30fa80ff58bba67e85ca5b8957d.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to\n§9Mercenary Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "METEOR_MAGMA_LORD",
+      "name": "Meteor Magma Lord Helmet Skin",
+      "texturePath": "/assets/helmets/skins/63e59250c968e508539bf2e8492f56a2f664efb309f495a07dc3a54c8b6a249e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Magma\n§6Lord Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "MYSTIC_MOON_FLUX",
+      "name": "Mystic Moon Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/866852112051b1cf5ad958ac84975bff2b3da302e71ed986670f907bf1ce185f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated, and adapts to\n§athe day-night cycle!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "NECRON_CELESTIAL",
+      "name": "Celestial Necron's Helmet Skin",
+      "texturePath": "/assets/helmets/skins/ee8cb45614e83c1bdfc23f45364f6533a446a13b812d83038669ebc10305e3b5.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Necron's\n§6Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "NECRON_DIAMOND_KNIGHT",
+      "name": "Knight Skin",
+      "texturePath": "/assets/helmets/skins/5a7834d46e7739bfdc942b660492d590f6f1034437c6e6804eadcc2e83152941.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §cDiamond\n§cNecron Head§7.\n\n§aThis skin will allow you to swap\n§abetween 15 shiny versions!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "NORTH_STAR_BACKPACK",
+      "name": "North Star Backpack Skin",
+      "texturePath": "/assets/helmets/skins/ad9195fc1d2bc6b54af4552e504535ab6a7f6f7c5e1912867f082243152eaab8.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "NUTCRACKER_KNIGHT",
+      "name": "Nutcracker Knight Skin",
+      "texturePath": "/assets/helmets/skins/7455ecb0279b373623c9a60f5c4ca0528ddc08cc166eca98bf741e70910495ae.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to\n§6Nutcracker Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "OLD_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/2eaf836b7183554269647827289c67a3855e8d0b345719328188defdbd05a64b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Old\n§6Dragon Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "OLD_DRAGON_DRAKE",
+      "name": "Old Drake Skin",
+      "texturePath": "/assets/helmets/skins/3aad6ba02684d975d3e3686705261fea560f18d44183140afbaf3579e0ac8287.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Old\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "OLD_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/78bf606f5ace4e3cfb81a14742992ff5a868d1f0f9d14b4bec9393859e0e0a00.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Old\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PALADIN_MINERAL",
+      "name": "Paladin Mineral Helmet Skin",
+      "texturePath": "/assets/helmets/skins/6900715bf3e4744abe0d531e610c8b7c72d100dc17cce1b0b61f9067f8f963e1.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Mineral\n§5Helmet§7 and §6Glossy Mineral Helmet§7.\n\n§7This skin is swappable between §a20\n§7holy paladin variants!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PANDA_SPIRIT",
+      "name": "Panda Spirit Skin",
+      "texturePath": "/assets/helmets/skins/9649fad8b25b7ddaa1b99b7ee86573ea5a948df4453bfde7d1fe016516ee3e34.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Spirit\n§5Mask§7 and §6⚚ Spirit Mask§7.\n\n§aThis skin adapts to the day-night\n§acycle!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PENGUIN_BACKPACK",
+      "name": "Penguin Backpack Skin",
+      "texturePath": "/assets/helmets/skins/c25a27b12e547de8fe58e27521f493ff2298aba48de0d3d4de9d94cdec03a258.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "PERFECT_FORGE",
+      "name": "Reinforced Skin",
+      "texturePath": "/assets/helmets/skins/855b72f529f9bd33a6ec1df16f17f054dece6b553c21d286ad4e93fc658147d3.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aPerfect\n§aHelmets§7.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PINA_COOLADA_BARN_SKIN",
+      "name": "Pina Coolada Barn Skin",
+      "texturePath": "/assets/helmets/skins/97f4ce37ba5b3fc9a3c2eb32d4341d341691812a7ab2ed02aba89778f8e6be30.png",
+      "lore": "§7Consume this item to unlock the §6Pina\n§6Coolada Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "PIRATE_BOMB_FLUX",
+      "name": "Pirate Bomb Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/64f815bcbac237340464b777807f26b5e9317c19d579da2dd94cbbc6a0de5138.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "POLAR_LIGHTS_FLUX",
+      "name": "Polar Lights Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/a113e6745b76f22a056f55fb68616b082bb63330fb3b7f356fd830de6a8b4f71.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "POLAR_NIGHTS_POWER_FLUX",
+      "name": "Polar Nights Power Orb Skin",
+      "texturePath": "/assets/helmets/skins/d9884fa7cb66b1cc5308703b693e5b3cb94c2f4368c61877d02da1e9a0ee4597.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aRadiant\n§aPower Orb§7, §9Mana Flux Power Orb§7,\n§5Overflux Power Orb§7, and §6Plasmaflux\n§6Power Orb§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Power Orb"
+    },
+    {
+      "id": "PRECURSOR_EYE_OCULUS",
+      "name": "Oculus Skin",
+      "texturePath": "/assets/helmets/skins/64577d9e5a5adc8e0936295eb6300fde0ff9b023f20befc153b28deeea8047a1.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to\n§6Precursor Eye§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between §a19\n§7variants!\n§8▶ §7Changes the color of your §6Eye\n§6Beam §7depending on your selected\n§7skin!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PROTECTOR_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/979c9144496d21f3334b32437deeb63379766399d0a92bc06712ba592bc237e6.png",
+      "lore": "§7§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n§7\n§7§7This skin can be applied to\n§7§a§6Protector Dragon Helmet\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PROTECTOR_DRAGON_DRAKE",
+      "name": "Protector Drake Skin",
+      "texturePath": "/assets/helmets/skins/f9d8d582bd1a94313e5d0000bc3a60b7a96ff65834ce90af9048824192bf4882.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Protector\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PROTECTOR_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/72cd120841228d2812ca07433a3ec4640de81fa1f4bb9b42269c741403196fdb.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Protector\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "PURPLE_EGG",
+      "name": "Purple Egged Skin",
+      "texturePath": "/assets/helmets/skins/286023508f6fa4feb8be4bb8153f4a26fe26edd6f1307c6f8044cd2c653a08be.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "RABBIT_JERRY_ONESIE",
+      "name": "Rabbit Onesie Jerry Skin",
+      "texturePath": "/assets/helmets/skins/6a0385f8ecd04c0c82edd1c716ac10addc6c66fbbbaf0c8178f193ee905c0828.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §fRabbit\n§fHelmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "REAPER_BLUE_ONI_MASK",
+      "name": "Blue Oni Reaper Mask Skin",
+      "texturePath": "/assets/helmets/skins/899e239f27f35761b5726dc77b6b5a3db377d25f7e4ef846daaec76e35cba373.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Reaper\n§6Mask§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "REAPER_ONI_MASK",
+      "name": "Oni Reaper Mask Skin",
+      "texturePath": "/assets/helmets/skins/e6ff8158f218f7683262443db5ad438d19d9bbc5d45d6c45ce543c8a473aadff.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Reaper\n§6Mask§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "REAPER_RED_ONI_MASK",
+      "name": "Red Oni Reaper Mask Skin",
+      "texturePath": "/assets/helmets/skins/266e570a648e19db58f5e0e7a7667f599b1871f286b36572c4b7737491c9b060.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Reaper\n§6Mask§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "REAPER_SPECTRE",
+      "name": "Spectre Skin",
+      "texturePath": "/assets/helmets/skins/c9a95c9d7d94a947d2d83cfbc2cbaca66e679f556b120fc2ed8b7c7c7af78fe1.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Reaper\n§6Mask§7.\n\n§aThis skin will allow you to swap\n§abetween 18 favorite reaper\n§aspectres!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "REAPER_SPIRIT",
+      "name": "Spirit Skin",
+      "texturePath": "/assets/helmets/skins/724d2072918054a95a4f4bbc931bf3929d01cb012368bc4c78d0a3acc9cdbeea.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Reaper\n§6Mask§7.\n\n§aThis skin adapts to the day-night\n§acycle!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "REINDEER_BACKPACK",
+      "name": "Reindeer Backpack Skin",
+      "texturePath": "/assets/helmets/skins/68a1828f2dbc365df9461095d7bb7964d5a4a881928f7a99c09d0ef9c3187e13.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §aBackpacks§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Backpack"
+    },
+    {
+      "id": "REKINDLED_EMBER_BURNING",
+      "name": "Smoldering Ember Skin",
+      "texturePath": "/assets/helmets/skins/d2309ca29da534d4c0d5b0ea46471ae9be32b49e44e7d1d78dbdfed48df73e7c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Rekindled\n§5Ember Helmet§7 and §5Ember Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SAND_CASTLE_BARN_SKIN",
+      "name": "Sand Castle Barn Skin",
+      "texturePath": "/assets/helmets/skins/c8543c961cc531b906ce4fa45c3c4fcea72d70291d517e01f14d4905a686139b.png",
+      "lore": "§7Consume this item to unlock the §6Sand\n§6Castle Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "SENTINEL_WARDEN",
+      "name": "Sentinel Warden Skin",
+      "texturePath": "/assets/helmets/skins/e9c588a8b62affd74643e0d6641bda3a0784a304c579c067fa495e2c43ec9462.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Warden\n§6Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between 8\n§7variants, unlocked from §4Revenant\n§4Horror §7Slayer XP!\n§8▶ §7Modifies the look of your\n§4Revenant Horror §7Boss.\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHADOW_ASSASSIN_ADMIRAL",
+      "name": "Admiral Skin",
+      "texturePath": "/assets/helmets/skins/d7fcfa5b0af855f314606a5cd2b597475286a152d1ee08d9949a6386cbc46a8e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Shadow\n§5Assassin Helmet§7 and §6⚚ Shadow\n§6Assassin Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHADOW_ASSASSIN_CRIMSON",
+      "name": "Crimson Skin",
+      "texturePath": "/assets/helmets/skins/49c7622826a78f9131cb18656b9bdc33f3b0ca59fb73c88e4ea374dd0e0372d3.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Shadow\n§5Assassin Helmet§7 and §6⚚ Shadow\n§6Assassin Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHADOW_ASSASSIN_MAUVE",
+      "name": "Mauve Skin",
+      "texturePath": "/assets/helmets/skins/ebd50bb833ccc84e70a2469f6e47d5d51ac60aae5b9f651ee7ae383fea4a40ed.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Shadow\n§5Assassin Helmet§7 and §6⚚ Shadow\n§6Assassin Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHADOW_ASSASSIN_SLY_FOX",
+      "name": "Sly Fox Skin",
+      "texturePath": "/assets/helmets/skins/cfc75423a2a5773319792c96d9359d42067efa1c7093010131c4056948abf490.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Shadow\n§5Assassin Helmet§7 and §6⚚ Shadow\n§6Assassin Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHARK_SCALE_HOODIE_FOX",
+      "name": "Fox Hoodie Skin",
+      "texturePath": "/assets/helmets/skins/a7dd90c5b68579d5b5f024d60317756005d4ee5809643d80f8e6b32bf088055b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Shark\n§6Scale Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between 20\n§7hoodie variants.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHARK_SCALE_HOODIE_PENGUIN",
+      "name": "Penguin Hoodie Skin",
+      "texturePath": "/assets/helmets/skins/81b25293befcf336ec9fea082479b7071d3c8a7ab29f94c33d7727712ac729fd.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Shark\n§6Scale Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between 20\n§7hoodie variants.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SHARK_SCALE_HOODIE_SEAL",
+      "name": "Seal Hoodie Skin",
+      "texturePath": "/assets/helmets/skins/156ec8e1dffcbb36daa6ffb9ae133615ac8e8c18044eea420b6ebb8907249153.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Shark\n§6Scale Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between 20\n§7hoodie variants.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SNOW_SNOWGLOBE",
+      "name": "Snowglobe Skin",
+      "texturePath": "/assets/helmets/skins/13229f8525726684fb0227dad7621f05f0b8b5d58a8693fd0ea0688349f1d53c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Snow Suit\n§5Helmet§7.\n\n§aThis skin is animated!\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SORROW_PALADIN",
+      "name": "Paladin Skin",
+      "texturePath": "/assets/helmets/skins/53c03b60f809a69a3d845f686a758e6576083b06626efcd89565b06e02fc8520.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Sorrow\n§6Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SORROW_SAMURAI",
+      "name": "Sorrowful Samurai Skin",
+      "texturePath": "/assets/helmets/skins/b939aa2daf532d5fdb305a3df62aa3f49466e84d74785cd94ef30cf847a52145.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Sorrow\n§6Helmet§7.\n\n§aThis skin will allow you to swap\n§abetween 18 tearful versions!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "STARLIGHT_STARKNIGHT",
+      "name": "Starknight Skin",
+      "texturePath": "/assets/helmets/skins/bb2171f36b7a71f835ee18f031fa830017edb419e99a656be55807f576ad7c68.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §9Starlight\n§9Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "STORM_CELESTIAL",
+      "name": "Celestial Storm's Helmet Skin",
+      "texturePath": "/assets/helmets/skins/1447cad8e79e1ecab885ff89c07ee6d9fe8a2ba8d2ce649403c950810d837556.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Storm's\n§6Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "STRONG_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/aec10b0dceb5bb34af2cb953733f01f20bb3aafd5f21fe0eadf1cc4ce7f4dab4.png",
+      "lore": "§7§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n§7\n§7§7This skin can be applied to\n§7§a§6Strong Dragon Helmet\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "STRONG_DRAGON_DRAKE",
+      "name": "Strong Drake Skin",
+      "texturePath": "/assets/helmets/skins/626e13659f0ac7f4f50adaf698d4b632ee0acbd014e17cacaf18e3b1081e786c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Strong\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "STRONG_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/ad3241f4419f06d17d88b21cc8e412f4ef11d7cfadd882e269da5a490e08f0e4.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Strong\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SUPERIOR_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/52a770459fa6d65e22aa95679d93a2870aafea70f9f1c6a0f78eb641e92890.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Superior\n§6Dragon Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SUPERIOR_DRAGON_DRAKE",
+      "name": "Superior Drake Skin",
+      "texturePath": "/assets/helmets/skins/ff234183b6964f0593a9b9c8e79807d8c65da210ba3fd06805d71ab895bf8152.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Superior\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "SUPERIOR_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/cb3deae44a93acf001ae6bef1e1f4d56e4b7eca4ba14699d071023a24eed2c2e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Superior\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "TARANTULA_BLACK_WIDOW",
+      "name": "Black Widow Skin",
+      "texturePath": "/assets/helmets/skins/b2b6732eaa9788458468f5976943986464974af35feafb4fcad05a7a308c2a67.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Tarantula\n§5Helmet§7 and §6Primordial Helmet§7.\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "TARANTULA_REDBACK",
+      "name": "Redback Skin",
+      "texturePath": "/assets/helmets/skins/972e9200bb4b2cc35b974acc7c9078fc588504ed88c56c9cbbf2016cc032f6f5.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Tarantula\n§5Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "THUNDER_BIKER_AQUA",
+      "name": "Thunder Aqua Biker Skin",
+      "texturePath": "/assets/helmets/skins/137d3c068fae54240ae976270d59d4bc9a2d06456f5d9a1ed6691c05940dedb8.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Thunder\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "THUNDER_BIKER_AZURE",
+      "name": "Thunder Azure Biker Skin",
+      "texturePath": "/assets/helmets/skins/c272558d1e4dd95807158145753c138309b3d5ee12a6e5dd4cae84ce15b66353.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Thunder\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "THUNDER_BIKER_BLACK",
+      "name": "Thunder Black Biker Skin",
+      "texturePath": "/assets/helmets/skins/f47012d332ef297cd771450f3d8b00875ea0d7713895efd230c9761796c6a1e2.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Thunder\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "THUNDER_BIKER_PINK",
+      "name": "Thunder Pink Biker Skin",
+      "texturePath": "/assets/helmets/skins/ecff35c76b518c31e290c0862efaf128e9d590f2c6680691403539a7c033d93c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Thunder\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "THUNDER_BIKER_TEAL",
+      "name": "Thunder Teal Biker Skin",
+      "texturePath": "/assets/helmets/skins/6640bba00cbc1fae890507012ccb4a4ab7d2d0ec53929032b4329ed868ac4a18.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Thunder\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "THUNDER_STORM_KNIGHT",
+      "name": "Thunder Storm Knight Skin",
+      "texturePath": "/assets/helmets/skins/c4c72ce94586cb740b2ab51411af15235912b74ee675629bbf8c8ea69d451536.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Thunder\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "TRUE_WARDEN",
+      "name": "True Warden Skin",
+      "texturePath": "/assets/helmets/skins/1cafe848fd755d998a06a58321912244cf76eef1ce78a51228fdd1020ab73a68.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Warden\n§6Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "TURKEY_BARN_SKIN",
+      "name": "Turkey Barn Skin",
+      "texturePath": "/assets/helmets/skins/c77a7706cedd881af315177f816193550db7a4a4542a5dbc9b0cec6d2e88bd71.png",
+      "lore": "§7Consume this item to unlock the\n§6Turkey Barn Skin §7on §aThe Garden§7!\n\n§eClick to consume!\n\n§6§lLEGENDARY COSMETIC",
+      "animated": false,
+      "category": "Barn"
+    },
+    {
+      "id": "UNSTABLE_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/42a023636a7f0300a74cc50d3e4dbb81a7bc1485f0daf6e9a7c0f4d8a2e3a18f.png",
+      "lore": "§7§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n§7\n§7§7This skin can be applied to\n§7§a§6Unstable Dragon Helmet\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "UNSTABLE_DRAGON_DRAKE",
+      "name": "Unstable Drake Skin",
+      "texturePath": "/assets/helmets/skins/9e4a8a071b6540ee8569cfd6a25c48090dcc076114391681aa5d1ce6c94ab27c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Unstable\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "UNSTABLE_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/17397c1603be4bcf52eae0d2ad66e1663aad724a8f069ba87aa41aa8d2b48820.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Unstable\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WATER_HYDRA_BABY",
+      "name": "Baby Hydra Skin",
+      "texturePath": "/assets/helmets/skins/55b656be66be552c36e47fefd209738321dfbe210d033811e1e44ac29937c814.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Water\n§5Hydra Head§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WATER_HYDRA_DRAGON",
+      "name": "Dragon Hydra Skin",
+      "texturePath": "/assets/helmets/skins/e4cbba3345850a6981afd89a0748a48845b861ae5bce42b109e9baef78c1133b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Water\n§5Hydra Head§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WATER_HYDRA_HEAD_ICE_HYDRA",
+      "name": "Ice Hydra Skin",
+      "texturePath": "/assets/helmets/skins/73be7ad9ad6933b36bfb368e22e70b096f3455cbd807afb80f8c78d2c5a0b278.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Water\n§5Hydra Head§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WEREWOLF_WOLF_PACK",
+      "name": "Wolf Pack Werewolf Skin",
+      "texturePath": "/assets/helmets/skins/97cb30773039940c7376af2a260ee2316476ae23173d46a664600a1b30f5cb6f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Werewolf\n§6Helmet§7.\n\n§aThis skin will allow you to swap\n§abetween 18 favorite wolf packs!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WISE_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/94c6834c8bf0b81f92cf0da4bd99ad764154d5368a38e03c85adda10e518890a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Wise\n§6Dragon Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WISE_DRAGON_DRAKE",
+      "name": "Wise Drake Skin",
+      "texturePath": "/assets/helmets/skins/468b1e281c03e57f4737757cda26f993bc407da7170473863429956dd135b95.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Wise\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WISE_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/25d7c5909f742e2e85ba7f2c7449f9e12a5c42c5a1132974df7f4ef204d6ca1e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Wise\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WITHER_AWAKENED",
+      "name": "Awakened Wither Helmet Skin",
+      "texturePath": "/assets/helmets/skins/20724a1373c479e676527b679a37bac6466a04633724c5c5def9b15cdc018218.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Wither\n§6Helmet§7, §6Necron's Helmet§7, §6Storm's\n§6Helmet§7, §6Maxor's Helmet§7, and §6Goldor's\n§6Helmet§7.\n\n§aFeatures!\n§8▶ §7This skin is swappable between §a22\n§7awoke variants.\n§8▶ §7Keeps track of the total §cDungeon\n§cChests §7opened while wearing this skin.\n\n§4§lULTIMATE COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WITHER_GOGGLES_CELESTIAL",
+      "name": "Celestial Wither Goggles Skin",
+      "texturePath": "/assets/helmets/skins/dc1e2d4bd39ea253dda6a36f6bc352f69ef169facc2b767798c1816aaf70f498.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Wither\n§5Goggles§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "WITHER_GOGGLES_CYBERPUNK",
+      "name": "Cyberpunk Wither Goggles Skin",
+      "texturePath": "/assets/helmets/skins/84046578650f0b44e6dc570555d61163be03201b717bd9f758244f83d941ffd2.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Wither\n§5Goggles§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "YOG_ABLAZE",
+      "name": "Ablaze Skin",
+      "texturePath": "/assets/helmets/skins/ac23b0bfa4e0393d6a598b3990c916507bbbf477d7ee20dca0c9b7625165b4f2.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §5Yog\n§5Helmet§7.\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "YOUNG_BABY",
+      "name": "Baby Skin",
+      "texturePath": "/assets/helmets/skins/43503dcaae6a6cde027316a3ce6e203b64327b7de72441865cfd3cdb45d5ef44.png",
+      "lore": "§7§7Item skins give your gear a\n§7fresh new look! Apply them just\n§7like an enchant book using the\n§7anvil.\n§7\n§7§7This skin can be applied to\n§7§a§6Young Dragon Helmet\n\n§5§lEPIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "YOUNG_DRAGON_DRAKE",
+      "name": "Young Drake Skin",
+      "texturePath": "/assets/helmets/skins/fdf709f82e96981665421d753208fb8e7f89d38c41ae5c60dc5b428ff0725f93.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Young\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    },
+    {
+      "id": "YOUNG_SHIMMER",
+      "name": "Shimmer Skin",
+      "texturePath": "/assets/helmets/skins/e1ad5d83e55890290f52e4ad06e4351a2e87998d1cb3e76cc952a076deb7882b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Item skins give your gear a fresh\n§7new look! Apply them just like an\n§7enchant book using the anvil.\n\n§7This skin can be applied to §6Young\n§6Dragon Helmet§7.\n\n§aThis skin is animated!\n\n§d§lMYTHIC COSMETIC",
+      "animated": false,
+      "category": "Helmet"
+    }
+  ]
+}

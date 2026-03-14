@@ -1,6 +1,6 @@
-import { useEffect, useState, useMemo, useCallback } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { TooltipProvider } from './components/ui/tooltip';
-import type { RegistryEntry } from './lib/cosmetics';
+import type { CatalogItem, RegistryEntry } from './lib/cosmetics';
 import { useAppStore } from './store/useAppStore';
 import { AppHeader } from './components/layout/AppHeader';
 import { PetSidebar } from './components/pets/PetSidebar';
@@ -37,6 +37,7 @@ function App() {
   const [isSkinsPanelOpen, setIsSkinsPanelOpen] = useState(() => typeof window !== 'undefined' && window.innerWidth >= 768);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [path, setPath] = useState(() => (typeof window !== 'undefined' ? window.location.pathname : '/'));
+  const [viewerCatalogPreview, setViewerCatalogPreview] = useState<CatalogItem | null>(null);
 
   const navigate = useCallback((to: string) => {
     if (typeof window === 'undefined') return;
@@ -116,6 +117,7 @@ function App() {
   }, []);
 
   const handleRarityClick = useCallback((petId: string, rarityName: string) => {
+    setViewerCatalogPreview(null);
     selectPet(petId);
     if (selectedPetId === petId && selectedPetData) {
       const idx = selectedPetData.rarities.findIndex((r) => r.name === rarityName);
@@ -123,7 +125,10 @@ function App() {
     }
   }, [selectPet, selectedPetId, selectedPetData, selectRarityIdx]);
 
+  const isCatalogPreview = viewerCatalogPreview !== null;
+
   const activeTextureUrl = useMemo(() => {
+    if (viewerCatalogPreview) return viewerCatalogPreview.texturePath;
     if (!selectedPetData) return '/assets/skins/steve.png';
     if (selectedVariantId) {
       const skin = selectedPetData.variants.find((v) => v.id === selectedVariantId);
@@ -131,7 +136,7 @@ function App() {
     }
     const rarity = selectedPetData.rarities[selectedRarityIdx] ?? selectedPetData.rarities[0];
     return rarity?.texturePath ?? '/assets/skins/steve.png';
-  }, [selectedPetData, selectedVariantId, selectedRarityIdx]);
+  }, [selectedPetData, selectedVariantId, selectedRarityIdx, viewerCatalogPreview]);
 
   const filteredPets = useMemo(() => {
     let result = Object.entries(registry);
@@ -155,16 +160,25 @@ function App() {
   }, [registry]);
 
   const activeVariantSupportDayNight = useMemo(() => {
+    if (viewerCatalogPreview?.animation && 'day' in viewerCatalogPreview.animation) return true;
     if (!selectedPetData || !selectedVariantId) return false;
     const skin = selectedPetData.variants.find((v) => v.id === selectedVariantId);
     return Boolean(skin?.animation && 'day' in skin.animation);
-  }, [selectedPetData, selectedVariantId]);
+  }, [selectedPetData, selectedVariantId, viewerCatalogPreview]);
+
+  const activeVariantIsAnimated = useMemo(() => {
+    if (viewerCatalogPreview) return Boolean(viewerCatalogPreview.animated || viewerCatalogPreview.animation);
+    if (!selectedPetData || !selectedVariantId) return false;
+    const skin = selectedPetData.variants.find((v) => v.id === selectedVariantId);
+    return Boolean(skin?.animated || skin?.animation);
+  }, [selectedPetData, selectedVariantId, viewerCatalogPreview]);
 
   const activeAnimation = useMemo(() => {
+    if (viewerCatalogPreview) return viewerCatalogPreview.animation;
     if (!selectedPetData || !selectedVariantId) return undefined;
     const skin = selectedPetData.variants.find((v) => v.id === selectedVariantId);
     return skin?.animation;
-  }, [selectedPetData, selectedVariantId]);
+  }, [selectedPetData, selectedVariantId, viewerCatalogPreview]);
 
   if (loading) {
     return (
@@ -183,8 +197,6 @@ function App() {
     <TooltipProvider delayDuration={100}>
       <div className="flex flex-col h-screen w-full bg-[#111111] text-white overflow-hidden relative selection:bg-emerald-500/30 font-sans">
         <AppHeader
-          isSidebarOpen={isSidebarOpen}
-          onToggleSidebar={() => setIsSidebarOpen((o) => !o)}
           onOpenInfo={() => setIsSettingsModalOpen(true)}
           onOpenCollection={() => navigate('/browse')}
           onBackToViewer={() => navigate('/')}
@@ -194,35 +206,53 @@ function App() {
 
         {!isBrowse ? (
           <div className="flex flex-1 overflow-hidden relative flex flex-row">
-            {isSidebarOpen && (
+            {isSidebarOpen && !isCatalogPreview && (
               <div
                 className="fixed inset-0 bg-black/50 z-20 md:hidden backdrop-blur-sm"
                 onClick={handleCloseSidebar}
               />
             )}
 
-            <PetSidebar
-              isOpen={isSidebarOpen}
-              registry={registry}
-              filteredPets={filteredPets}
-              categories={categories}
-              selectedPetId={selectedPetId}
-              searchQuery={searchQuery}
-              activeFilter={activeFilter}
-              showAnimatedOnly={showAnimatedOnly}
-              onSelectPet={(id) => {
-                selectPet(id);
-                setIsSidebarOpen(false);
-              }}
-              onSearchChange={setSearchQuery}
-              onFilterChange={setActiveFilter}
-              onAnimatedOnlyChange={setShowAnimatedOnly}
-              onRarityClick={handleRarityClick}
-              onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
-            />
+            {!isCatalogPreview && (
+              <PetSidebar
+                isOpen={isSidebarOpen}
+                registry={registry}
+                filteredPets={filteredPets}
+                categories={categories}
+                selectedPetId={selectedPetId}
+                searchQuery={searchQuery}
+                activeFilter={activeFilter}
+                showAnimatedOnly={showAnimatedOnly}
+                onSelectPet={(id) => {
+                  setViewerCatalogPreview(null);
+                  selectPet(id);
+                  setIsSidebarOpen(false);
+                }}
+                onSearchChange={setSearchQuery}
+                onFilterChange={setActiveFilter}
+                onAnimatedOnlyChange={setShowAnimatedOnly}
+                onRarityClick={handleRarityClick}
+                onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+              />
+            )}
 
             <div className="flex-1 relative flex flex-col bg-[#141414] shadow-[inset_0_0_50px_rgba(0,0,0,0.8)] min-w-0">
-              {selectedPetData && (
+              {selectedPetData && selectedPetData.variants.length > 0 && !isCatalogPreview && (
+                <button
+                  onClick={() => setIsSkinsPanelOpen(!isSkinsPanelOpen)}
+                  className="md:hidden absolute right-4 top-4 z-20 bg-[#222222]/90 p-2.5 border-2 border-white/10 text-emerald-500 shadow-xl backdrop-blur-md active:scale-95 transition-all"
+                  title="Toggle Skins"
+                >
+                  <div className="relative">
+                    <div className="w-5 h-5 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-emerald-500/20 rounded-full animate-ping" />
+                      <span className="text-[10px] font-black leading-none">{selectedPetData.variants.length}</span>
+                    </div>
+                  </div>
+                </button>
+              )}
+
+              {selectedPetData && !isCatalogPreview && (
                 <PetInfoPanel
                   key={`${selectedPetData.type}:${selectedVariantId ?? 'default'}:${selectedRarityIdx}`}
                   selectedPet={selectedPetData}
@@ -232,21 +262,41 @@ function App() {
                 />
               )}
 
+              {viewerCatalogPreview && (
+                <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 z-10 max-w-[calc(100vw-2rem)] md:max-w-md border-2 border-[#2a2a2a] bg-[#111111]/88 p-4 shadow-2xl backdrop-blur-md">
+                  <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[#7f7f7f]">{viewerCatalogPreview.typeLabel}</div>
+                  <div className="mt-2 mc-font text-xl leading-snug" style={{ color: '#ffffff' }}>
+                    {viewerCatalogPreview.itemNamePlain}
+                  </div>
+                  <div className="mt-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8f8f8f]">
+                    {viewerCatalogPreview.parentNamePlain}
+                  </div>
+                  <button
+                    onClick={() => setViewerCatalogPreview(null)}
+                    className="mt-4 border-2 border-[#2f4d4d] bg-[#102020] px-4 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-emerald-200 transition-colors hover:border-emerald-500 hover:bg-[#143030]"
+                  >
+                    Return to pet viewer
+                  </button>
+                </div>
+              )}
+
               <ViewerScene
                 textureUrl={activeTextureUrl}
                 animation={activeAnimation}
+                isAnimatedSkin={activeVariantIsAnimated}
                 supportsDayNight={activeVariantSupportDayNight}
                 dayNightMode={dayNightMode}
                 onToggleDayNight={() => setDayNightMode(dayNightMode === 'day' ? 'night' : 'day')}
               />
             </div>
 
-            {selectedPetData && selectedPetData.variants.length > 0 && (
+            {selectedPetData && selectedPetData.variants.length > 0 && !isCatalogPreview && (
               <SkinsPanel
                 variants={selectedPetData.variants}
                 selectedVariantId={selectedVariantId}
                 onSelectVariant={(id) => {
                   selectVariant(id);
+                  setIsSkinsPanelOpen(false);
                 }}
                 isOpen={isSkinsPanelOpen}
                 onToggle={() => setIsSkinsPanelOpen(!isSkinsPanelOpen)}
@@ -255,9 +305,14 @@ function App() {
           </div>
         ) : (
           <BrowsePage
-            onViewIn3D={(petId, skinId) => {
-              selectPet(petId);
-              selectVariant(skinId);
+            onViewIn3D={(item) => {
+              if (item.viewerSupport === 'petViewer' && item.viewIn3D) {
+                setViewerCatalogPreview(null);
+                selectPet(item.viewIn3D.petId);
+                selectVariant(item.viewIn3D.skinId);
+              } else {
+                setViewerCatalogPreview(item);
+              }
               navigate('/');
             }}
           />

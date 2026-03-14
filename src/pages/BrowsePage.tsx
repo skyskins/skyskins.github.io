@@ -25,10 +25,11 @@ import {
 import { useAppStore } from '../store/useAppStore';
 import { rarityHex, compareBrowseRarity, stripMinecraftFormatting } from '../utils/skinRarity';
 import { 
-  type CosmeticTypeFilter, 
+  type BrowseFilterKey,
+  getBrowseFilterKey,
   getBrowseDescription, 
+  getHelmetCategoryFilterKey,
   getTypeIcon, 
-  getTypeFilterLabel, 
   matchesBrowseQuery, 
   uniqueSortedValues 
 } from '../utils/browseUtils';
@@ -40,10 +41,16 @@ type SortModeOwned = 'date' | 'qty' | 'item' | 'source';
 const PREVIEW_YAW = -42;
 const PREVIEW_PITCH = 27;
 const PREVIEW_ROTATION = 19;
-const FILTERS: ReadonlyArray<CosmeticTypeFilter> = ['all', 'petSkin', 'dye', 'helmetSkin'];
+const HELMET_FILTER_PRIORITY = ['Helmet', 'Power Orb', 'Backpack', 'Barn'];
+
+interface BrowseFilterOption {
+  key: BrowseFilterKey;
+  label: string;
+  count: number;
+}
 
 interface BrowsePageProps {
-  onViewIn3D: (petId: string, skinId: string) => void;
+  onViewIn3D: (item: CatalogItem) => void;
 }
 
 export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
@@ -66,7 +73,7 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
 
   const [query, setQuery] = useState('');
   const [ownedOnly, setOwnedOnly] = useState(false);
-  const [typeFilter, setTypeFilter] = useState<CosmeticTypeFilter>('all');
+  const [typeFilter, setTypeFilter] = useState<BrowseFilterKey>('all');
   const [rarityFilters, setRarityFilters] = useState<CosmeticRarity[]>([]);
   const [rarityFilterOpen, setRarityFilterOpen] = useState(false);
   const [sortAll, setSortAll] = useState<SortModeAll>('type');
@@ -116,29 +123,68 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
     [ownedCosmetics],
   );
 
-  const typeCounts = useMemo(() => {
-    const counts: Record<CosmeticTypeFilter, number> = {
-      all: allItems.length,
-      petSkin: 0,
-      dye: 0,
-      helmetSkin: 0,
-    };
+  const browseFilters = useMemo<BrowseFilterOption[]>(() => {
+    const helmetCategoryCounts = new Map<BrowseFilterKey, BrowseFilterOption>();
+    let petSkinCount = 0;
+    let dyeCount = 0;
 
-    for (const item of allItems) counts[item.type] += 1;
-    return counts;
+    for (const item of allItems) {
+      if (item.type === 'petSkin') {
+        petSkinCount += 1;
+        continue;
+      }
+
+      if (item.type === 'dye') {
+        dyeCount += 1;
+        continue;
+      }
+
+      const label = item.category?.trim() || 'Helmet';
+      const key = getHelmetCategoryFilterKey(label);
+      const existing = helmetCategoryCounts.get(key);
+      if (existing) {
+        existing.count += 1;
+      } else {
+        helmetCategoryCounts.set(key, { key, label, count: 1 });
+      }
+    }
+
+    const helmetFilters = [...helmetCategoryCounts.values()].sort((a, b) => {
+      const aIndex = HELMET_FILTER_PRIORITY.indexOf(a.label);
+      const bIndex = HELMET_FILTER_PRIORITY.indexOf(b.label);
+      if (aIndex !== -1 || bIndex !== -1) {
+        if (aIndex === -1) return 1;
+        if (bIndex === -1) return -1;
+        return aIndex - bIndex;
+      }
+      return a.label.localeCompare(b.label);
+    });
+
+    return [
+      { key: 'all' as const, label: 'All', count: allItems.length },
+      { key: 'petSkin' as const, label: 'Pet Skin', count: petSkinCount },
+      { key: 'dye' as const, label: 'Dye', count: dyeCount },
+      ...helmetFilters,
+    ].filter((filter) => filter.count > 0);
   }, [allItems]);
+
+  const effectiveTypeFilter = useMemo(
+    () => (browseFilters.some((filter) => filter.key === typeFilter) ? typeFilter : 'all'),
+    [browseFilters, typeFilter],
+  );
 
   const scopedItems = useMemo(() => {
     const items: CatalogItem[] = ownedOnly
       ? ownedEntries.map((entry) => itemsByKey.get(entry.key)).filter((item): item is CatalogItem => Boolean(item))
       : allItems;
 
-    if (typeFilter !== 'all') {
-      return items.filter((item) => item.type === typeFilter);
+    if (effectiveTypeFilter === 'all') return items;
+    if (effectiveTypeFilter === 'petSkin' || effectiveTypeFilter === 'dye') {
+      return items.filter((item) => item.type === effectiveTypeFilter);
     }
 
-    return items;
-  }, [allItems, itemsByKey, ownedEntries, ownedOnly, typeFilter]);
+    return items.filter((item) => item.type === 'helmetSkin' && getBrowseFilterKey(item) === effectiveTypeFilter);
+  }, [allItems, effectiveTypeFilter, itemsByKey, ownedEntries, ownedOnly]);
 
   const rarityOptions = useMemo(
     () =>
@@ -149,9 +195,10 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
     [scopedItems],
   );
 
-  useEffect(() => {
-    setRarityFilters((current) => current.filter((rarity) => rarityOptions.includes(rarity)));
-  }, [rarityOptions]);
+  const activeRarityFilters = useMemo(
+    () => rarityFilters.filter((rarity) => rarityOptions.includes(rarity)),
+    [rarityFilters, rarityOptions],
+  );
 
   const toggleRarityFilter = (rarity: CosmeticRarity) => {
     setRarityFilters((current) =>
@@ -161,15 +208,15 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
 
   const filteredItems = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const hasRarityFilters = rarityFilters.length > 0;
+    const hasRarityFilters = activeRarityFilters.length > 0;
 
     return scopedItems
-      .filter((item) => (hasRarityFilters ? rarityFilters.includes(item.rarity) : true))
+      .filter((item) => (hasRarityFilters ? activeRarityFilters.includes(item.rarity) : true))
       .filter((item) => matchesBrowseQuery(item, q));
-  }, [query, rarityFilters, scopedItems]);
+  }, [activeRarityFilters, query, scopedItems]);
 
-  const hasAdvancedFilters = rarityFilters.length > 0;
-  const raritySummary = hasAdvancedFilters ? `${rarityFilters.length} selected` : 'All rarities';
+  const hasAdvancedFilters = activeRarityFilters.length > 0;
+  const raritySummary = hasAdvancedFilters ? `${activeRarityFilters.length} selected` : 'All rarities';
 
   const sortedItems = useMemo(() => {
     const items = [...filteredItems];
@@ -279,7 +326,7 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
   };
 
   const selectedLore = selected?.lore ? stripMinecraftFormatting(selected.lore) : null;
-  const selectedCanViewIn3D = Boolean(selected?.viewerSupport === 'petViewer' && selected.viewIn3D);
+  const selectedCanViewIn3D = Boolean(selected?.previewMode === 'skin-head' && selected.frames.length > 0);
   const selectedHex = selected ? rarityHex(selected.rarity) : null;
 
   return (
@@ -288,13 +335,13 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
         <div className="flex flex-col gap-2 p-2 md:p-3 xl:px-4 xl:py-3 cursor-default">
           <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-2 xl:gap-4">
             <div className="flex flex-nowrap md:flex-wrap overflow-x-auto gap-1.5 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden w-full xl:w-auto">
-              {FILTERS.map((filterValue) => {
-                const Icon = getTypeIcon(filterValue);
-                const isActive = typeFilter === filterValue;
+              {browseFilters.map((filterOption) => {
+                const Icon = getTypeIcon(filterOption.key);
+                const isActive = effectiveTypeFilter === filterOption.key;
                 return (
                   <button
-                    key={filterValue}
-                    onClick={() => setTypeFilter(filterValue)}
+                    key={filterOption.key}
+                    onClick={() => setTypeFilter(filterOption.key)}
                     className={`shrink-0 flex items-center h-9 gap-1.5 border px-2.5 text-[10px] md:text-[11px] font-black uppercase tracking-[0.16em] transition-colors ${
                       isActive
                         ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-300'
@@ -302,9 +349,9 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
                     }`}
                   >
                     <Icon className="h-3 w-3 md:h-3.5 md:w-3.5" />
-                    <span>{getTypeFilterLabel(filterValue)}</span>
+                    <span>{filterOption.label}</span>
                     <span className="border border-white/5 bg-black/40 px-1 py-0.5 text-[9px] text-[#aaa]">
-                      {typeCounts[filterValue]}
+                      {filterOption.count}
                     </span>
                   </button>
                 );
@@ -445,7 +492,7 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
                   <div className="absolute z-20 top-[100%] left-[-1px] w-[calc(100%+2px)] border border-[#222] border-t-0 bg-[#151515] shadow-2xl">
                     <div className="flex flex-col p-1.5 gap-1 max-h-[40vh] overflow-y-auto">
                       {rarityOptions.map((rarity) => {
-                        const isActive = rarityFilters.includes(rarity);
+                        const isActive = activeRarityFilters.includes(rarity);
                         return (
                           <button
                             key={rarity}
@@ -771,8 +818,8 @@ export function BrowsePage({ onViewIn3D }: BrowsePageProps) {
                 onRemove={() => removeOwnedCosmetic(selected.key)}
                 onSave={handleSaveOwned}
                 onViewIn3D={() => {
-                  if (selectedCanViewIn3D && selected.viewIn3D) {
-                    onViewIn3D(selected.viewIn3D.petId, selected.viewIn3D.skinId);
+                  if (selectedCanViewIn3D && selected) {
+                    onViewIn3D(selected);
                   }
                 }}
                 selectedOwned={selectedOwned}
