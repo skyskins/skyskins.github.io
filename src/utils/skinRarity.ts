@@ -1,4 +1,4 @@
-import type { CosmeticRarity } from '../store/useAppStore';
+import type { CosmeticRarity } from '../lib/cosmetics';
 
 const RARITY_ORDER: CosmeticRarity[] = [
   'COMMON',
@@ -10,6 +10,7 @@ const RARITY_ORDER: CosmeticRarity[] = [
   'DIVINE',
   'SPECIAL',
   'VERY SPECIAL',
+  'ULTIMATE',
   'SUPREME',
   'UNKNOWN',
 ];
@@ -22,9 +23,8 @@ export function parseCosmeticRarityFromLore(lore?: string): CosmeticRarity {
   if (!lore) return 'UNKNOWN';
 
   const clean = stripMinecraftFormatting(lore).toUpperCase();
-
-  // Prefer longer/compound phrases first.
   if (clean.includes('VERY SPECIAL')) return 'VERY SPECIAL';
+  if (clean.includes('ULTIMATE')) return 'ULTIMATE';
   if (clean.includes('SUPREME')) return 'SUPREME';
   if (clean.includes('SPECIAL')) return 'SPECIAL';
   if (clean.includes('DIVINE')) return 'DIVINE';

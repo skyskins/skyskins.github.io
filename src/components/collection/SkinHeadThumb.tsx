@@ -10,6 +10,7 @@ interface SkinHeadThumbProps {
   background?: boolean;
   yawDeg?: number;
   pitchDeg?: number;
+  rotationDeg?: number;
   className?: string;
 }
 
@@ -48,12 +49,17 @@ function rotY(v: Vec3, a: number): Vec3 {
   const s = Math.sin(a);
   return { x: v.x * c + v.z * s, y: v.y, z: -v.x * s + v.z * c };
 }
+function rotZ(v: Vec3, a: number): Vec3 {
+  const c = Math.cos(a);
+  const s = Math.sin(a);
+  return { x: v.x * c - v.y * s, y: v.x * s + v.y * c, z: v.z };
+}
 function project(v: Vec3): Vec2 {
   // Canvas Y grows downward; invert so +Y renders upward.
   return { x: v.x, y: -v.y };
 }
 
-type FaceKey = 'front' | 'right' | 'top';
+type FaceKey = 'front' | 'right' | 'left' | 'back' | 'top' | 'bottom';
 
 function getHeadRegion(face: FaceKey, texW: number, texH: number, outer: boolean) {
   const scaleX = texW / 64;
@@ -61,8 +67,11 @@ function getHeadRegion(face: FaceKey, texW: number, texH: number, outer: boolean
   const ox = outer ? 32 : 0;
   const oy = 0;
   if (face === 'front') return { x: (ox + 8) * scaleX, y: (oy + 8) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
-  if (face === 'right') return { x: (ox + 16) * scaleX, y: (oy + 8) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
-  return { x: (ox + 8) * scaleX, y: (oy + 0) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
+  if (face === 'right') return { x: (ox + 0) * scaleX, y: (oy + 8) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
+  if (face === 'left') return { x: (ox + 16) * scaleX, y: (oy + 8) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
+  if (face === 'back') return { x: (ox + 24) * scaleX, y: (oy + 8) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
+  if (face === 'top') return { x: (ox + 8) * scaleX, y: (oy + 0) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
+  return { x: (ox + 16) * scaleX, y: (oy + 0) * scaleY, w: 8 * scaleX, h: 8 * scaleY };
 }
 
 function drawFaceMapped(
@@ -103,16 +112,35 @@ function buildFaceGeometry(half: number) {
       bl: { x: -h, y: -h, z: h },
     },
     right: {
-      tl: { x: h, y: h, z: h },
-      tr: { x: h, y: h, z: -h },
-      bl: { x: h, y: -h, z: h },
+      tl: { x: h, y: h, z: -h },
+      tr: { x: h, y: h, z: h },
+      bl: { x: h, y: -h, z: -h },
+    },
+    left: {
+      tl: { x: -h, y: h, z: h },
+      tr: { x: -h, y: h, z: -h },
+      bl: { x: -h, y: -h, z: h },
+    },
+    back: {
+      tl: { x: h, y: h, z: -h },
+      tr: { x: -h, y: h, z: -h },
+      bl: { x: h, y: -h, z: -h },
     },
     top: {
       tl: { x: -h, y: h, z: -h },
       tr: { x: h, y: h, z: -h },
       bl: { x: -h, y: h, z: h },
     },
+    bottom: {
+      tl: { x: -h, y: -h, z: h },
+      tr: { x: h, y: -h, z: h },
+      bl: { x: -h, y: -h, z: -h },
+    },
   } as const;
+}
+
+function transformPoint(v: Vec3, rx: number, ry: number, rz: number): Vec3 {
+  return rotZ(rotY(rotX(v, rx), ry), rz);
 }
 
 function drawSkullLikeThumb(
@@ -122,6 +150,7 @@ function drawSkullLikeThumb(
   background: boolean,
   yawDeg: number,
   pitchDeg: number,
+  rotationDeg: number,
 ) {
   const w = size;
   const h = size;
@@ -145,6 +174,7 @@ function drawSkullLikeThumb(
   // - yaw: viewer's positive azimuth rotates camera around Y; to match viewpoint we rotate model by -yaw.
   const rx = (pitchDeg * Math.PI) / 180;
   const ry = (-yawDeg * Math.PI) / 180;
+  const rz = (rotationDeg * Math.PI) / 180;
 
   const patchSize = 64;
   const patch = document.createElement('canvas');
@@ -173,7 +203,7 @@ function drawSkullLikeThumb(
   // Compute projected cube bounds so we can center/scale it in the square.
   const verts: Vec3[] = [];
   for (const sx of [-1, 1]) for (const sy of [-1, 1]) for (const sz of [-1, 1]) verts.push({ x: 0.5 * sx, y: 0.5 * sy, z: 0.5 * sz });
-  const proj = verts.map((v) => project(rotY(rotX(v, rx), ry)));
+  const proj = verts.map((v) => project(transformPoint(v, rx, ry, rz)));
   const minX = Math.min(...proj.map((p) => p.x));
   const maxX = Math.max(...proj.map((p) => p.x));
   const minY = Math.min(...proj.map((p) => p.y));
@@ -186,28 +216,46 @@ function drawSkullLikeThumb(
   const ty = h / 2 - ((minY + maxY) / 2) * scale;
 
   const toPx = (v: Vec3): Vec2 => {
-    const p = project(rotY(rotX(v, rx), ry));
+    const p = project(transformPoint(v, rx, ry, rz));
     return { x: p.x * scale + tx, y: p.y * scale + ty };
   };
 
   const geomInner = buildFaceGeometry(0.5);
   const geomOuter = buildFaceGeometry(0.5 * outerScale);
+  const normals: Record<FaceKey, Vec3> = {
+    front: { x: 0, y: 0, z: 1 },
+    right: { x: 1, y: 0, z: 0 },
+    left: { x: -1, y: 0, z: 0 },
+    back: { x: 0, y: 0, z: -1 },
+    top: { x: 0, y: 1, z: 0 },
+    bottom: { x: 0, y: -1, z: 0 },
+  };
+  const shading: Record<FaceKey, { inner: number; outer: number }> = {
+    front: { inner: 0.06, outer: 0.05 },
+    right: { inner: 0.22, outer: 0.18 },
+    left: { inner: 0.2, outer: 0.17 },
+    back: { inner: 0.28, outer: 0.24 },
+    top: { inner: 0.1, outer: 0.08 },
+    bottom: { inner: 0.3, outer: 0.26 },
+  };
 
-  // Draw inner faces (top -> right -> front).
-  drawPatch('top', false, patch);
-  drawFaceMapped(ctx, patch, toPx(geomInner.top.tl), toPx(geomInner.top.tr), toPx(geomInner.top.bl), 0.10);
-  drawPatch('right', false, patch);
-  drawFaceMapped(ctx, patch, toPx(geomInner.right.tl), toPx(geomInner.right.tr), toPx(geomInner.right.bl), 0.22);
-  drawPatch('front', false, patch);
-  drawFaceMapped(ctx, patch, toPx(geomInner.front.tl), toPx(geomInner.front.tr), toPx(geomInner.front.bl), 0.06);
+  const faceOrder = (Object.keys(geomInner) as FaceKey[])
+    .map((face) => {
+      const normal = transformPoint(normals[face], rx, ry, rz);
+      const corners = geomInner[face];
+      const avgZ = (transformPoint(corners.tl, rx, ry, rz).z + transformPoint(corners.tr, rx, ry, rz).z + transformPoint(corners.bl, rx, ry, rz).z) / 3;
+      return { face, visible: normal.z > 0, avgZ };
+    })
+    .filter((entry) => entry.visible)
+    .sort((a, b) => a.avgZ - b.avgZ);
 
-  // Draw outer hat layer.
-  drawPatch('top', true, patchOuter);
-  drawFaceMapped(ctx, patchOuter, toPx(geomOuter.top.tl), toPx(geomOuter.top.tr), toPx(geomOuter.top.bl), 0.08);
-  drawPatch('right', true, patchOuter);
-  drawFaceMapped(ctx, patchOuter, toPx(geomOuter.right.tl), toPx(geomOuter.right.tr), toPx(geomOuter.right.bl), 0.18);
-  drawPatch('front', true, patchOuter);
-  drawFaceMapped(ctx, patchOuter, toPx(geomOuter.front.tl), toPx(geomOuter.front.tr), toPx(geomOuter.front.bl), 0.05);
+  for (const { face } of faceOrder) {
+    drawPatch(face, false, patch);
+    drawFaceMapped(ctx, patch, toPx(geomInner[face].tl), toPx(geomInner[face].tr), toPx(geomInner[face].bl), shading[face].inner);
+
+    drawPatch(face, true, patchOuter);
+    drawFaceMapped(ctx, patchOuter, toPx(geomOuter[face].tl), toPx(geomOuter[face].tr), toPx(geomOuter[face].bl), shading[face].outer);
+  }
 }
 
 export function SkinHeadThumb({
@@ -217,6 +265,7 @@ export function SkinHeadThumb({
   background = false,
   yawDeg = 45,
   pitchDeg = 30,
+  rotationDeg = 0,
   className,
 }: SkinHeadThumbProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -264,7 +313,7 @@ export function SkinHeadThumb({
       try {
         const img = await loadImage(urls[idx] ?? urls[0]);
         if (cancelled) return;
-        drawSkullLikeThumb(ctx, img, size, background, yawDeg, pitchDeg);
+        drawSkullLikeThumb(ctx, img, size, background, yawDeg, pitchDeg, rotationDeg);
       } catch {
         if (cancelled) return;
         ctx.clearRect(0, 0, size, size);
@@ -302,7 +351,7 @@ export function SkinHeadThumb({
       cancelled = true;
       stop();
     };
-  }, [background, dpr, frameDuration, pitchDeg, play, size, urls, yawDeg]);
+  }, [background, dpr, frameDuration, pitchDeg, play, rotationDeg, size, urls, yawDeg]);
 
   return (
     <div ref={hostRef} className={className}>

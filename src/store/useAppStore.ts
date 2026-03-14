@@ -1,73 +1,14 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-
-function assetUrl(path: string) {
-  const base = import.meta.env.BASE_URL || '';
-  return `${base}${path.replace(/^\//, '')}`;
-}
-
-export interface PetAnimation {
-  ticks: number;
-  frames: string[];
-}
-
-export interface DayNightAnimation {
-  day: PetAnimation;
-  night: PetAnimation;
-}
-
-export interface PetVariant {
-  id: string;
-  name: string;
-  texturePath: string;
-  lore?: string;
-  animated?: boolean;
-  animation?: PetAnimation | DayNightAnimation;
-}
-
-export interface PetRecord {
-  name: string;
-  type: string;
-  category: string;
-  description: string;
-  infoUrls: string[];
-  recipes: unknown[];
-  rarities: PetVariant[];
-  variants: PetVariant[];
-}
-
-export interface RegistryEntry {
-  name: string;
-  category: string;
-  rarities: { name: string }[];
-  variantsCount: number;
-}
-
-export type CosmeticRarity =
-  | 'COMMON'
-  | 'UNCOMMON'
-  | 'RARE'
-  | 'EPIC'
-  | 'LEGENDARY'
-  | 'MYTHIC'
-  | 'DIVINE'
-  | 'SPECIAL'
-  | 'VERY SPECIAL'
-  | 'SUPREME'
-  | 'UNKNOWN';
-
-export interface OwnedSkinEntry {
-  key: string; // `${petId}::${skinId}` to disambiguate duplicate ids
-  skinId: string;
-  petId: string;
-  petName: string;
-  skinName: string;
-  rarity: CosmeticRarity;
-  quantity: number;
-  acquiredDate?: string; // YYYY-MM-DD
-  pricePaid?: number;
-  updatedAt: number;
-}
+import {
+  assetUrl,
+  type BrowseLayout,
+  type CosmeticKind,
+  type CosmeticRarity,
+  type OwnedCosmeticEntry,
+  type PetRecord,
+  type RegistryEntry,
+} from '../lib/cosmetics';
 
 interface AppState {
   registry: Record<string, RegistryEntry>;
@@ -79,8 +20,9 @@ interface AppState {
   activeFilter: string | null;
   showAnimatedOnly: boolean;
   dayNightMode: 'day' | 'night';
+  browseLayout: BrowseLayout;
 
-  ownedSkins: Record<string, OwnedSkinEntry>;
+  ownedCosmetics: Record<string, OwnedCosmeticEntry>;
   
   setRegistry: (data: Record<string, RegistryEntry>) => void;
   selectPet: (id: string | null) => void;
@@ -90,11 +32,12 @@ interface AppState {
   setActiveFilter: (filter: string | null) => void;
   setShowAnimatedOnly: (val: boolean) => void;
   setDayNightMode: (mode: 'day' | 'night') => void;
+  setBrowseLayout: (layout: BrowseLayout) => void;
   fetchPetData: (id: string) => Promise<void>;
 
-  upsertOwnedSkin: (entry: Omit<OwnedSkinEntry, 'updatedAt'>) => void;
-  updateOwnedSkin: (key: string, patch: Partial<Omit<OwnedSkinEntry, 'key' | 'updatedAt'>>) => void;
-  removeOwnedSkin: (key: string) => void;
+  upsertOwnedCosmetic: (entry: Omit<OwnedCosmeticEntry, 'updatedAt'>) => void;
+  updateOwnedCosmetic: (key: string, patch: Partial<Omit<OwnedCosmeticEntry, 'key' | 'updatedAt'>>) => void;
+  removeOwnedCosmetic: (key: string) => void;
 }
 
 export const useAppStore = create<AppState>()(
@@ -109,7 +52,8 @@ export const useAppStore = create<AppState>()(
       activeFilter: null,
       showAnimatedOnly: false,
       dayNightMode: 'day',
-      ownedSkins: {},
+      browseLayout: 'grid',
+      ownedCosmetics: {},
       
       setRegistry: (data) => set({ registry: data }),
       selectPet: (id) => {
@@ -144,56 +88,81 @@ export const useAppStore = create<AppState>()(
       setActiveFilter: (f) => set({ activeFilter: f }),
       setShowAnimatedOnly: (val) => set({ showAnimatedOnly: val }),
       setDayNightMode: (mode) => set({ dayNightMode: mode }),
+      setBrowseLayout: (layout) => set({ browseLayout: layout }),
 
-      upsertOwnedSkin: (entry) =>
+      upsertOwnedCosmetic: (entry) =>
         set((state) => ({
-          ownedSkins: {
-            ...state.ownedSkins,
+          ownedCosmetics: {
+            ...state.ownedCosmetics,
             [entry.key]: { ...entry, updatedAt: Date.now() },
           },
         })),
-      updateOwnedSkin: (key, patch) =>
+      updateOwnedCosmetic: (key, patch) =>
         set((state) => {
-          const existing = state.ownedSkins[key];
+          const existing = state.ownedCosmetics[key];
           if (!existing) return {};
           return {
-            ownedSkins: {
-              ...state.ownedSkins,
+            ownedCosmetics: {
+              ...state.ownedCosmetics,
               [key]: { ...existing, ...patch, updatedAt: Date.now() },
             },
           };
         }),
-      removeOwnedSkin: (key) =>
+      removeOwnedCosmetic: (key) =>
         set((state) => {
-          if (!state.ownedSkins[key]) return {};
-          const next = { ...state.ownedSkins };
+          if (!state.ownedCosmetics[key]) return {};
+          const next = { ...state.ownedCosmetics };
           delete next[key];
-          return { ownedSkins: next };
+          return { ownedCosmetics: next };
         }),
     }),
     {
       name: 'skyskins-storage',
-      migrate: (persisted: unknown, _version) => {
+      migrate: (persisted: unknown) => {
         const state = (persisted ?? {}) as Record<string, unknown>;
-        const owned = (state.ownedSkins && typeof state.ownedSkins === 'object'
-          ? (state.ownedSkins as Record<string, unknown>)
-          : {}) as Record<string, unknown>;
+        const ownedSource = (
+          state.ownedCosmetics && typeof state.ownedCosmetics === 'object'
+            ? (state.ownedCosmetics as Record<string, unknown>)
+            : state.ownedSkins && typeof state.ownedSkins === 'object'
+              ? (state.ownedSkins as Record<string, unknown>)
+              : {}
+        ) as Record<string, unknown>;
 
-        // Migrate old `{ [skinId]: entry }` shape into `{ [petId::skinId]: entry }`.
-        // If it's already migrated, entries will have `key`.
-        const nextOwned: Record<string, OwnedSkinEntry> = {};
-        for (const [k, v] of Object.entries(owned)) {
+        const nextOwned: Record<string, OwnedCosmeticEntry> = {};
+        for (const [k, v] of Object.entries(ownedSource)) {
           const entry = (v && typeof v === 'object' ? (v as Record<string, unknown>) : {}) as Record<string, unknown>;
-          const petId = typeof entry.petId === 'string' ? entry.petId : undefined;
-          const skinId = typeof entry.skinId === 'string' ? entry.skinId : k;
-          if (!petId || !skinId) continue;
-          const key = typeof entry.key === 'string' ? entry.key : `${petId}::${skinId}`;
+          const type = (typeof entry.type === 'string' ? entry.type : 'petSkin') as CosmeticKind;
+          const parentId =
+            typeof entry.parentId === 'string'
+              ? entry.parentId
+              : typeof entry.petId === 'string'
+                ? entry.petId
+                : undefined;
+          const itemId =
+            typeof entry.itemId === 'string'
+              ? entry.itemId
+              : typeof entry.skinId === 'string'
+                ? entry.skinId
+                : k;
+          if (!parentId || !itemId) continue;
+          const key = typeof entry.key === 'string' ? entry.key : `${type}::${parentId}::${itemId}`;
           nextOwned[key] = {
             key,
-            skinId,
-            petId,
-            petName: typeof entry.petName === 'string' ? entry.petName : petId,
-            skinName: typeof entry.skinName === 'string' ? entry.skinName : skinId,
+            type,
+            parentId,
+            itemId,
+            parentName:
+              typeof entry.parentName === 'string'
+                ? entry.parentName
+                : typeof entry.petName === 'string'
+                  ? entry.petName
+                  : parentId,
+            itemName:
+              typeof entry.itemName === 'string'
+                ? entry.itemName
+                : typeof entry.skinName === 'string'
+                  ? entry.skinName
+                  : itemId,
             rarity: (typeof entry.rarity === 'string' ? entry.rarity : 'UNKNOWN') as CosmeticRarity,
             quantity: typeof entry.quantity === 'number' ? entry.quantity : 1,
             acquiredDate: typeof entry.acquiredDate === 'string' ? entry.acquiredDate : undefined,
@@ -202,7 +171,7 @@ export const useAppStore = create<AppState>()(
           };
         }
 
-        return { ...(state as any), ownedSkins: nextOwned };
+        return { ...(state as Record<string, unknown>), ownedCosmetics: nextOwned, browseLayout: state.browseLayout ?? 'grid' };
       },
       partialize: (state) => ({ 
         selectedPetId: state.selectedPetId,
@@ -211,7 +180,8 @@ export const useAppStore = create<AppState>()(
         activeFilter: state.activeFilter,
         showAnimatedOnly: state.showAnimatedOnly,
         dayNightMode: state.dayNightMode,
-        ownedSkins: state.ownedSkins,
+        browseLayout: state.browseLayout,
+        ownedCosmetics: state.ownedCosmetics,
       }),
     }
   )

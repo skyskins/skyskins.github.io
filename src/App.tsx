@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo, useCallback } from 'react';
 import { TooltipProvider } from './components/ui/tooltip';
-import { useAppStore, type RegistryEntry } from './store/useAppStore';
+import type { RegistryEntry } from './lib/cosmetics';
+import { useAppStore } from './store/useAppStore';
 import { AppHeader } from './components/layout/AppHeader';
 import { PetSidebar } from './components/pets/PetSidebar';
 import { SkinsPanel } from './components/pets/SkinsPanel';
@@ -256,6 +257,7 @@ function App() {
 
               {selectedPetData && (
                 <PetInfoPanel
+                  key={`${selectedPetData.type}:${selectedVariantId ?? 'default'}:${selectedRarityIdx}`}
                   selectedPet={selectedPetData}
                   selectedVariantId={selectedVariantId}
                   selectedRarityIdx={selectedRarityIdx}
