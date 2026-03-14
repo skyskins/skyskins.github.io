@@ -32,7 +32,6 @@ export function SkinsPanel({ variants, selectedVariantId, onSelectVariant, isOpe
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
-        {/* Header */}
         <div className="shrink-0 p-3 border-b-4 border-[#1a1a1a] bg-[#1a1a1a] flex items-center gap-2">
           <Layers className="w-4 h-4 text-emerald-400 shrink-0" />
           <span className="font-bold text-xs uppercase text-[#aaa] tracking-wider">Skins</span>
@@ -46,12 +45,10 @@ export function SkinsPanel({ variants, selectedVariantId, onSelectVariant, isOpe
           </button>
         </div>
 
-        {/* Skin list */}
         <div className="flex-1 min-h-0">
           <TooltipProvider delayDuration={200}>
             <ScrollArea className="h-full">
               <div className="p-2 flex flex-col gap-1">
-                {/* Default option */}
                 <button
                   onClick={() => onSelectVariant(null)}
                   className={`p-2 text-left w-full transition-all duration-150 border-2 flex items-center justify-between ${
@@ -121,7 +118,6 @@ export function SkinsPanel({ variants, selectedVariantId, onSelectVariant, isOpe
         aria-label={isOpen ? 'Hide skins panel' : 'Show skins panel'}
         title={isOpen ? 'Hide skins' : 'Show skins'}
       >
-        {/* Skin count badge */}
         <div className="relative flex items-center justify-center w-5 h-5">
           {!isOpen && (
             <div className="absolute inset-0 bg-emerald-500/20 rounded-full animate-ping" />
@@ -130,7 +126,6 @@ export function SkinsPanel({ variants, selectedVariantId, onSelectVariant, isOpe
             {variants.length}
           </span>
         </div>
-        {/* Small icon hint */}
         <Layers className="w-3 h-3 text-slate-400 group-hover:text-emerald-300 transition-colors" />
       </button>
     </div>

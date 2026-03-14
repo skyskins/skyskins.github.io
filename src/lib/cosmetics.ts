@@ -121,15 +121,25 @@ interface StaticManifestItem {
   viewerSupport?: CosmeticViewerSupport;
 }
 
-interface StaticManifest {
+interface LegacyStaticManifest {
+  kind: Exclude<CosmeticKind, 'petSkin'>;
+  label: string;
+  items: StaticManifestItem[];
+}
+
+interface VariantStaticManifest {
+  variants: StaticManifestItem[];
+}
+
+interface LoadedStaticManifest {
   kind: Exclude<CosmeticKind, 'petSkin'>;
   label: string;
   items: StaticManifestItem[];
 }
 
 const STATIC_MANIFESTS: ReadonlyArray<{ kind: Exclude<CosmeticKind, 'petSkin'>; path: string }> = [
-  { kind: 'dye', path: '/assets/catalog/dyes/dyes.json' },
-  { kind: 'helmetSkin', path: '/assets/catalog/helmets/helmet_skins.json' },
+  { kind: 'dye', path: '/assets/dyes/dyes.json' },
+  { kind: 'helmetSkin', path: '/assets/helmets/helmets.json' },
 ];
 
 export function makeCosmeticKey(type: CosmeticKind, parentId: string, itemId: string) {
@@ -144,6 +154,19 @@ export function getCosmeticTypeLabel(type: CosmeticKind) {
       return 'Dye';
     case 'helmetSkin':
       return 'Helmet Skin';
+    default: {
+      const exhaustiveCheck: never = type;
+      return exhaustiveCheck;
+    }
+  }
+}
+
+function getDefaultPreviewMode(type: CosmeticKind): CosmeticPreviewMode {
+  switch (type) {
+    case 'petSkin':
+    case 'dye':
+    case 'helmetSkin':
+      return 'skin-head';
     default: {
       const exhaustiveCheck: never = type;
       return exhaustiveCheck;
@@ -212,24 +235,77 @@ function createCatalogItem(
     animation: item.animation,
     frames: animationFrames.frames.map(assetUrl),
     ticks: animationFrames.ticks,
-    previewMode: item.previewMode ?? 'flat-image',
+    previewMode: item.previewMode ?? getDefaultPreviewMode(type),
     viewerSupport: item.viewerSupport ?? 'none',
     infoUrls: item.infoUrls ?? [],
     viewIn3D: item.viewIn3D,
   };
 }
 
+function getStaticManifestLabel(kind: Exclude<CosmeticKind, 'petSkin'>) {
+  switch (kind) {
+    case 'dye':
+      return 'Dyes';
+    case 'helmetSkin':
+      return 'Helmet Skins';
+    default: {
+      const exhaustiveCheck: never = kind;
+      return exhaustiveCheck;
+    }
+  }
+}
+
+function normalizeStaticTexturePath(texturePath: string) {
+  if (/^(data:|https?:\/\/)/.test(texturePath)) return texturePath;
+  if (texturePath.startsWith('/assets/catalog/dyes/')) return texturePath.replace('/assets/catalog/dyes/', '/assets/dyes/');
+  if (texturePath.startsWith('/assets/catalog/helmets/')) return texturePath.replace('/assets/catalog/helmets/', '/assets/helmets/');
+  return texturePath;
+}
+
+function getStaticParentName(
+  kind: Exclude<CosmeticKind, 'petSkin'>,
+  manifest: LoadedStaticManifest,
+  item: StaticManifestItem,
+) {
+  if (item.parentName) return item.parentName;
+  if (kind === 'helmetSkin' && item.category) return item.category;
+  return manifest.label;
+}
+
 async function loadStaticManifest(
   manifestPath: string,
   expectedKind: Exclude<CosmeticKind, 'petSkin'>,
-): Promise<StaticManifest | null> {
+): Promise<LoadedStaticManifest | null> {
   try {
     const response = await fetch(assetUrl(manifestPath));
     if (!response.ok) return null;
 
-    const manifest = (await response.json()) as StaticManifest;
-    if (manifest.kind !== expectedKind) return null;
-    return manifest;
+    const manifest = (await response.json()) as LegacyStaticManifest | VariantStaticManifest;
+
+    if ('kind' in manifest && 'items' in manifest) {
+      if (manifest.kind !== expectedKind) return null;
+      return {
+        kind: manifest.kind,
+        label: manifest.label,
+        items: manifest.items.map((item) => ({
+          ...item,
+          texturePath: normalizeStaticTexturePath(item.texturePath),
+        })),
+      };
+    }
+
+    if ('variants' in manifest) {
+      return {
+        kind: expectedKind,
+        label: getStaticManifestLabel(expectedKind),
+        items: manifest.variants.map((item) => ({
+          ...item,
+          texturePath: normalizeStaticTexturePath(item.texturePath),
+        })),
+      };
+    }
+
+    return null;
   } catch {
     return null;
   }
@@ -256,7 +332,7 @@ export async function loadCosmeticCatalog(
               ...variant,
               category: data.category ?? registry[petId]?.category ?? 'Pet Skin',
               description: `${stripMinecraftFormatting(parentName)} skin`,
-              previewMode: 'skin-head',
+              previewMode: getDefaultPreviewMode('petSkin'),
               viewerSupport: 'petViewer',
               infoUrls: data.infoUrls ?? [],
               viewIn3D: { petId, skinId: variant.id },
@@ -276,10 +352,10 @@ export async function loadCosmeticCatalog(
 
         for (const item of manifest.items) {
           items.push(
-            createCatalogItem(kind, item.parentId ?? manifest.kind, item.parentName ?? manifest.label, {
+            createCatalogItem(kind, item.parentId ?? manifest.kind, getStaticParentName(kind, manifest, item), {
               ...item,
               category: item.category ?? manifest.label,
-              previewMode: item.previewMode ?? 'flat-image',
+              previewMode: item.previewMode ?? getDefaultPreviewMode(kind),
               viewerSupport: item.viewerSupport ?? 'none',
             }),
           );

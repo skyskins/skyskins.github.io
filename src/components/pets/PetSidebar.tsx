@@ -95,10 +95,6 @@ export function PetSidebar({
   onToggleSidebar,
 }: PetSidebarProps) {
   return (
-    /**
-     * Outer wrapper: fixed-width 320px on desktop that collapses via negative margin.
-     * `overflow-visible` so the toggle tab can protrude beyond the edge.
-     */
     <div
       className={`
         relative shrink-0 h-full overflow-visible z-30
@@ -114,7 +110,6 @@ export function PetSidebar({
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        {/* Header */}
         <div className="shrink-0 p-4 border-b-4 border-[#1f1f1f] bg-[#222] flex flex-col gap-3">
           <div className="flex justify-between items-center">
             <h2 className="text-sm uppercase tracking-widest text-[#aaa] font-black">Pets</h2>
@@ -123,7 +118,6 @@ export function PetSidebar({
             </span>
           </div>
 
-          {/* Search */}
           <div className="relative">
             <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#777]" />
             <input
@@ -145,7 +139,6 @@ export function PetSidebar({
             )}
           </div>
 
-          {/* Category filter */}
           <div className="relative">
             <select
               value={activeFilter ?? ''}
@@ -165,7 +158,6 @@ export function PetSidebar({
             </div>
           </div>
 
-          {/* Animated only toggle */}
           <label className="flex items-center gap-2 cursor-pointer select-none group">
             <div className={`w-4 h-4 border-2 flex items-center justify-center transition-colors ${
               showAnimatedOnly ? 'bg-emerald-500 border-emerald-500' : 'bg-[#111] border-[#333] group-hover:border-[#555]'

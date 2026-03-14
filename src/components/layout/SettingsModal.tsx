@@ -30,7 +30,6 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
         className="bg-[#1e1e1e] border-4 border-[#333] w-full max-w-lg max-h-[90vh] flex flex-col shadow-2xl animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
         <div className="flex items-center justify-between p-3 border-b-4 border-[#333] bg-[#252525] shrink-0">
           <div className="flex items-center gap-2">
             <Settings className="w-4 h-4 text-emerald-400" />
@@ -46,8 +45,6 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
         <ScrollArea className="flex-1 p-3 sm:p-4">
           <div className="space-y-6">
-
-            {/* Shaders Section */}
             <section className="space-y-3">
               <div className="flex items-center gap-2 border-b-2 border-[#333] pb-2">
                 <h3 className="text-xs font-black tracking-widest text-emerald-400 uppercase">Visual Shaders</h3>
@@ -77,7 +74,6 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
               </div>
             </section>
 
-            {/* Data Section */}
             <section className="space-y-3">
               <div className="flex items-center gap-2 border-b-2 border-[#333] pb-2">
                 <h3 className="text-xs font-black tracking-widest text-[#aaa] uppercase">Data</h3>
@@ -93,7 +89,6 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
               </div>
             </section>
 
-            {/* Projects Section */}
             <section className="space-y-3">
               <div className="flex items-center gap-2 border-b-2 border-[#333] pb-2">
                 <h3 className="text-xs font-black tracking-widest text-[#aaa] uppercase">Our Projects</h3>
@@ -117,22 +112,21 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
               </a>
             </section>
 
-            {/* Info/Legend Section */}
             <section className="space-y-3 pt-2 border-t-2 border-[#1a1a1a]">
-               <div className="flex flex-wrap gap-2">
-                 <div className="flex items-center gap-2 bg-[#111] border border-[#222] p-2 pr-3">
-                   <div className="bg-[#222] p-1 shrink-0">
-                     <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                   </div>
-                   <span className="font-bold text-[#bbb] tracking-wide text-[10px] uppercase">Animated</span>
-                 </div>
-                 <div className="flex items-center gap-2 bg-[#111] border border-[#222] p-2 pr-3">
-                   <div className="bg-[#222] p-1 shrink-0">
-                     <SunMoon className="w-3.5 h-3.5 text-emerald-400" />
-                   </div>
-                   <span className="font-bold text-[#bbb] tracking-wide text-[10px] uppercase">Day/Night</span>
-                 </div>
-               </div>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex items-center gap-2 bg-[#111] border border-[#222] p-2 pr-3">
+                  <div className="bg-[#222] p-1 shrink-0">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                  </div>
+                  <span className="font-bold text-[#bbb] tracking-wide text-[10px] uppercase">Animated</span>
+                </div>
+                <div className="flex items-center gap-2 bg-[#111] border border-[#222] p-2 pr-3">
+                  <div className="bg-[#222] p-1 shrink-0">
+                    <SunMoon className="w-3.5 h-3.5 text-emerald-400" />
+                  </div>
+                  <span className="font-bold text-[#bbb] tracking-wide text-[10px] uppercase">Day/Night</span>
+                </div>
+              </div>
               <p className="text-[10px] text-[#555] leading-relaxed uppercase font-bold tracking-widest">
                 Not affiliated with Hypixel Inc. or Mojang AB.
               </p>

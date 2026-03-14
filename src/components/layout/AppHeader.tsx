@@ -1,8 +1,6 @@
 import { ArrowLeft, Grid3X3, Github, Settings } from 'lucide-react';
 
 interface AppHeaderProps {
-  isSidebarOpen: boolean;
-  onToggleSidebar: () => void;
   onOpenInfo: () => void;
   mode?: 'viewer' | 'browse';
   onOpenCollection: () => void;
@@ -25,18 +23,17 @@ export function AppHeader({ onOpenInfo, onOpenCollection, onBackToViewer, totalP
             <ArrowLeft className="w-5 h-5 text-slate-300" />
           </button>
         )}
-        
-        <div className="flex items-center gap-2 sm:gap-3 group cursor-pointer min-w-0">
+        <div className="group flex min-w-0 items-center gap-2 sm:gap-3">
           <div className="w-8 h-8 sm:w-10 sm:h-10 rounded flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-transform group-hover:scale-105 shrink-0 overflow-hidden">
-             <img src="/favicon.svg" alt="SkySkins Logo" className="w-full h-full object-cover" />
+            <img src="/favicon.svg" alt="SkySkins Logo" className="w-full h-full object-cover" />
           </div>
           <h1 className="flex flex-col -gap-0.5 sm:-gap-1 min-w-0 overflow-hidden">
             <span className="text-base sm:text-xl font-black tracking-tight text-white leading-tight truncate">
               SKY<span className="text-emerald-400">Skins</span>
             </span>
             <div className="hidden sm:flex items-center gap-1.5 text-[9px] sm:text-[10px] text-[#555555] font-bold uppercase tracking-[0.1em]">
-               <span>3D Skin Viewer</span>
-               <span className="w-1 h-1 rounded-full bg-[#333333]" />
+              <span>3D Skin Viewer</span>
+              <span className="w-1 h-1 rounded-full bg-[#333333]" />
             </div>
           </h1>
         </div>
@@ -76,9 +73,9 @@ export function AppHeader({ onOpenInfo, onOpenCollection, onBackToViewer, totalP
         >
           <Settings className="w-4 h-4 text-[#aaa] group-hover:rotate-180 transition-transform duration-500" />
         </button>
-        <a 
-          href="https://discord.gg/QMseZUzJdK" 
-          target="_blank" 
+        <a
+          href="https://discord.gg/QMseZUzJdK"
+          target="_blank"
           rel="noreferrer"
           className="flex items-center gap-2 text-[10px] font-black text-[#5865F2] hover:text-white transition-all bg-[#5865F2]/10 hover:bg-[#5865F2] p-2 sm:px-4 sm:py-2 border border-[#5865F2]/20 hover:border-[#5865F2] tracking-widest"
           title="Discord"

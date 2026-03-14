@@ -1,0 +1,438 @@
+{
+  "variants": [
+    {
+      "id": "BUCKET_OF_DYE",
+      "name": "Bucket of Dye",
+      "texturePath": "/assets/dyes/skins/34f6a9a52354b50616dd5a1004db9376e6d4a37538bff0bce20e4fa52d9362e1.png",
+      "lore": "§7Increases your chance of dropping\n§7Dyes by §a1%§7.\n\n§6✿ Chocolate Dye Donated\n\n§8Works while in Accessory Bag!\n§9§lRARE ACCESSORY",
+      "animated": false
+    },
+    {
+      "id": "DYE_AQUAMARINE",
+      "name": "Aquamarine Dye",
+      "texturePath": "/assets/dyes/skins/471915663c27fcc4eb50b334aa03fff175ed0363f4ef3e028b9cc771c81f545f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#7FFFD4§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_ARCHFIEND",
+      "name": "Archfiend Dye",
+      "texturePath": "/assets/dyes/skins/18d9ae6fb80377b22e12592e95cf914b88f491306035c4fbcfa286fb9d36e21e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#B80036§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_AURORA",
+      "name": "Aurora Dye",
+      "texturePath": "/assets/dyes/skins/85cffb7bb6383bba263c9471b50e413b1e6a0c7380c12308cc8c09760291b33b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#048F95§7 and §r#088D97§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_BINGO_BLUE",
+      "name": "Bingo Blue Dye",
+      "texturePath": "/assets/dyes/skins/430078d8fe96ca69f63f46b980ce137ba89e9f93f394c0bf9fecf1cd483f75de.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#002FA7§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_BLACK_ICE",
+      "name": "Black Ice Dye",
+      "texturePath": "/assets/dyes/skins/62ff0822c03d20cc12da483bb9998469efbce85d99e1ba4ee7ec8ce0cd07ead0.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §8#0B2031§7 and §8#091B2C§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_BONE",
+      "name": "Bone Dye",
+      "texturePath": "/assets/dyes/skins/c71e9683e80383541ef9feff39c8f814a42684149502424c0a9341d726f40d8a.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §f#E3DAC9§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_BRICK_RED",
+      "name": "Brick Red Dye",
+      "texturePath": "/assets/dyes/skins/ce113198a558946ae36e880db9c51857221b2cbec09f4ff5192e1385e8f8ec2a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#CB4154§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_BYZANTIUM",
+      "name": "Byzantium Dye",
+      "texturePath": "/assets/dyes/skins/9f18c05e12cfa4108ce0d9aaf9332ac3e27c883e8f4ed238349fe7fcd0ba5971.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#702963§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_CARMINE",
+      "name": "Carmine Dye",
+      "texturePath": "/assets/dyes/skins/8150b42e6497137217d5d8f56503f98d8f549cb034fbeae6fdd5431570518e38.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#960018§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_CELADON",
+      "name": "Celadon Dye",
+      "texturePath": "/assets/dyes/skins/db490f36fbbe4063f46126b7e4f3ac9eb793facb8f693031f5302a84bfd15811.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#ACE1AF§7!\n\n§5§kX§5 Rift-Transferable §5§kX\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_CELESTE",
+      "name": "Celeste Dye",
+      "texturePath": "/assets/dyes/skins/802891812a52ed6ed437672b3e6b214495b9651800aef87544ac5bd193758297.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §b#B2FFFF§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_CHOCOLATE",
+      "name": "Chocolate Dye",
+      "texturePath": "/assets/dyes/skins/a15e7208539306f65d68df9be6c3124c48027e307739fc8dc35526febd643c21.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §6#7B3F00§7!\n\n§5§lEPIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_COPPER",
+      "name": "Copper Dye",
+      "texturePath": "/assets/dyes/skins/cbab9b9598c44b55db29d19a22832ea5d7e01ae922bb3c65eb8d5210834b8469.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §8#B87333§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_CYCLAMEN",
+      "name": "Cyclamen Dye",
+      "texturePath": "/assets/dyes/skins/e679f93531ffb3d6023207763f2d7389d10de3d1c21dd76b0c12b4fec656e255.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §c#F56FA1§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_DARK_PURPLE",
+      "name": "Dark Purple Dye",
+      "texturePath": "/assets/dyes/skins/e6182adee5276372c2258256d50e69b7d857c675f54765acf73af61690a62c7e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#301934§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_DUNG",
+      "name": "Dung Dye",
+      "texturePath": "/assets/dyes/skins/b361e864864936e683b4fe0a4d4131e3f7ae22fe90084747173e3071ef0ddc82.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#4F2A2A§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_EMERALD",
+      "name": "Emerald Dye",
+      "texturePath": "/assets/dyes/skins/97a7e23ecd874d8156dd99a1aee977d691a2ac62cde09fc675295c175981680.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §2#50C878§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_FLAME",
+      "name": "Flame Dye",
+      "texturePath": "/assets/dyes/skins/e072250c6237fba4f7ad795c54c01c02542e2d7950d39203282e0cc51095dede.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#E25822§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_FOSSIL",
+      "name": "Fossil Dye",
+      "texturePath": "/assets/dyes/skins/9cc61d06eecb97b6bec2fb990118223b753894c22f02e03dc335f33d0644c213.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#866F12§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_FROG",
+      "name": "Frog Dye",
+      "texturePath": "/assets/dyes/skins/92724df29666da0274735cc9c29cad1fdd96e5aaa9a0bc0246f9a2b45285212c.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §a#64D400§7 and §a#65D400§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_FROSTBITTEN",
+      "name": "Frostbitten Dye",
+      "texturePath": "/assets/dyes/skins/e22b92e8c9b9db35f5ac2ad1235655cead444e50753c56e9a7184bca3a745729.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#09D8EB§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_HELLEBORE",
+      "name": "Hellebore Dye",
+      "texturePath": "/assets/dyes/skins/1f841da48cd25ac60ea01cefdbf3fecb07fd0aacee6f5ba00236aa7da89ea92d.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#E20F99§7 and §r#E3179D§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_HOLLY",
+      "name": "Holly Dye",
+      "texturePath": "/assets/dyes/skins/5cf0590b3eddeaacb542636ffbe4d51c7563d9f1d9e225807ab57239d3b59ee7.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#3C6746§7!\n\n§5§lEPIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_ICEBERG",
+      "name": "Iceberg Dye",
+      "texturePath": "/assets/dyes/skins/f731caff2335970cc5c7d345900b21fc57fe79a18a7a6134a32bdf37222d32a9.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §3#71A6D2§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_JADE",
+      "name": "Jade Dye",
+      "texturePath": "/assets/dyes/skins/8b215ff671f111e98d17a473fda8e5e9d0425ccd6e79426654ccb55f3f0cc652.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#00A86B§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_KINGFISHER",
+      "name": "Kingfisher Dye",
+      "texturePath": "/assets/dyes/skins/92b3b6a5b1659bdbdbd8a748c2112bc789008fd933b73ad31ec4b1bd15f9f681.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#004C57§7 and §r#014F59§7!\n\n§7This dye also displays a §6special\n§6particle effect §7when equipped!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_LAVA",
+      "name": "Lava Dye",
+      "texturePath": "/assets/dyes/skins/46e036e0b31ac2e515d023693b4faa8a3b0a17ddc143a21607258f63a044caa5.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#CA3B00§7 and §r#C63900§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_LIVID",
+      "name": "Livid Dye",
+      "texturePath": "/assets/dyes/skins/88b0214189b5af8e735c9d22ebcbf6e297a650e87ee53a9270fd724c7b328ffa.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#CEB7AA§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_LUCKY",
+      "name": "Lucky Dye",
+      "texturePath": "/assets/dyes/skins/2d87701ae93c2ddf5ddfe045c45fe49677d88abd1717bf161832e6c1d935e05f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#87FF37§7 and §r#006944§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_MANGO",
+      "name": "Mango Dye",
+      "texturePath": "/assets/dyes/skins/857ae6f197aa2007f2d68142d5678ca9abeee252f48343d1502bf89a189e93a5.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#FDBE02§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_MARINE",
+      "name": "Marine Dye",
+      "texturePath": "/assets/dyes/skins/8f32cca6b1f208b6613f004bd99870df6c7c51f6de09b485b7093440bcc90441.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#162875§7 and §r#162876§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_MATCHA",
+      "name": "Matcha Dye",
+      "texturePath": "/assets/dyes/skins/86402b7f728ff299df1238721264131860f239cd8015e3f026005197307d53ea.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#74A12E§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_MIDNIGHT",
+      "name": "Midnight Dye",
+      "texturePath": "/assets/dyes/skins/1bfc85960f4fdb57bbfa00c5ba76c21bab1b9f4fb744673e5b5e38b4f3a1a8a8.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#50216C§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_MOCHA",
+      "name": "Mocha Dye",
+      "texturePath": "/assets/dyes/skins/88acceffd61c972fb0986b38ad012e3ae23974e903fc6c9faa0631404968bb63.png",
+      "lore": "§7§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §8#967969§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_MYTHOLOGICAL",
+      "name": "Mythological Dye",
+      "texturePath": "/assets/dyes/skins/4c542472eee1cdee78a7a17fd6ee806a146959c97177587b6e2005e874a9f71e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#6F6F0C§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_NADESHIKO",
+      "name": "Nadeshiko Dye",
+      "texturePath": "/assets/dyes/skins/34e5f13bd7f2b9e5dd8c00c1d245995d2b33ba4f841e3c37da663997ab01251f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#F6ADC6§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_NECRON",
+      "name": "Necron Dye",
+      "texturePath": "/assets/dyes/skins/3770f6ccaf8861da3c8812825afaec5a95c5f336f728a26f135a2594b4875402.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#E7413C§7!\n\n§5§lEPIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_NYANZA",
+      "name": "Nyanza Dye",
+      "texturePath": "/assets/dyes/skins/182e623be99b3771803e7896e9a58e95220e0d4b60fb88e81032155e96bbdbfa.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#E9FFDB§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_OASIS",
+      "name": "Oasis Dye",
+      "texturePath": "/assets/dyes/skins/2e6d41de6ae5463a7765adbf86e1e18f9a8dc094f891de033ecc325b6f04c5a7.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#BAFF81§7 and §r#B7FF84§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_OCEAN",
+      "name": "Ocean Dye",
+      "texturePath": "/assets/dyes/skins/a38e31be47cf17d4ca3d26bed612bac6e30ad158628f074f31cf0efb53b25f71.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#064DC3§7 and §r#0554C9§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PASTEL_SKY",
+      "name": "Pastel Sky Dye",
+      "texturePath": "/assets/dyes/skins/66bcd2efec439f02c51a3e41ca93816bdbc15a6580e4f7ba1721343e1e1f940.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §d#FB87FF§7 and §d#ED87FF§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PEARLESCENT",
+      "name": "Pearlescent Dye",
+      "texturePath": "/assets/dyes/skins/5396ecd3b0f9f2d64397f9c0cea4e30e278aea77bd887236302843879aa4645d.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#115555§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PELT",
+      "name": "Pelt Dye",
+      "texturePath": "/assets/dyes/skins/6ff0a1171af85b48605871bb66d1d04c9f60531b61cb0b181f4c096f05dc2e54.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#50414C§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PERIWINKLE",
+      "name": "Periwinkle Dye",
+      "texturePath": "/assets/dyes/skins/fc829f56f7cf4b40221e6e5d38d457ab3cf50c073d946e128f4034843fa2f85e.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#CCCCFF§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PORTAL",
+      "name": "Portal Dye",
+      "texturePath": "/assets/dyes/skins/fc01b128783c4590fc5e2829f8ce1f9f9d24aa02561f92ffdb744a0775fb04de.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#5909C1§7 and §r#D412F0§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PURE_BLACK",
+      "name": "Pure Black Dye",
+      "texturePath": "/assets/dyes/skins/fd43f9db61bee94152e163e1f3168089fa98bcf6da789fda4c96b3f69e3bed0c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §0#000000§7!\n\n§5§lEPIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PURE_BLUE",
+      "name": "Pure Blue Dye",
+      "texturePath": "/assets/dyes/skins/800970cdecfa0bc53659ea28f994870155f0d4e2526a513392455939e50cc8ab.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#0013FF§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PURE_WHITE",
+      "name": "Pure White Dye",
+      "texturePath": "/assets/dyes/skins/2013a5c3ec067c4f3765cbf0a9e1e0e7a0e1992f4e3d38d27996fdefb8c818f8.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §f#FFFFFF§7!\n\n§5§lEPIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_PURE_YELLOW",
+      "name": "Pure Yellow Dye",
+      "texturePath": "/assets/dyes/skins/c218de2edf15bd24e75997ea33e3b946bdbe621cbd04ffd68e1cabcf7ebecea.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#FFF700§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_RED_TULIP",
+      "name": "Red Tulip Dye",
+      "texturePath": "/assets/dyes/skins/7a4f1f122d488aab080d34928386d7f290287362747ecfd51286c349973ea52c.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#8C0014§7 and §r#8D0015§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_ROSE",
+      "name": "Rose Dye",
+      "texturePath": "/assets/dyes/skins/9e88214694d09941e27855bf3a2a6d8f78050e30eb9f0bcb31ab9ac8f756b234.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#F06766§7 and §r#310417§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_SANGRIA",
+      "name": "Sangria Dye",
+      "texturePath": "/assets/dyes/skins/e2fc1b982a6206adb80760a28cbed0a8350062768a04106519093a4de0448629.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#D40808§7!\n\n§5§kX§5 Rift-Transferable §5§kX\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_SECRET",
+      "name": "Secret Dye",
+      "texturePath": "/assets/dyes/skins/282fcacb0e76b8d95e8643de7a41c94cd3a90334bc519651bd039ae1b914e41a.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#7D7D7D§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_SNOWFLAKE",
+      "name": "Snowflake Dye",
+      "texturePath": "/assets/dyes/skins/818cfff452b0ed6f2f9c2b7a91aa9f1640703d62a774b7fc52c6500b533edbfa.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#ACE5FF§7 and §r#B2EAFE§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_SPOOKY",
+      "name": "Spooky Dye",
+      "texturePath": "/assets/dyes/skins/3b1ee229759a2c01c0273518f07afcbb2606a690596ad260e1c7e8e08c35fbea.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#5118A5§7 and §r#5219A8§7!\n\n§7This dye also displays a §6special\n§6particle effect §7when equipped!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_SUNFLOWER",
+      "name": "Sunflower Dye",
+      "texturePath": "/assets/dyes/skins/84eed30c89fa806bc624bbe5665c2130bd92ef182c94b22301408bf974edfa4f.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §c#FFE507§7 and §c#FFE107§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_SUNSET",
+      "name": "Sunset Dye",
+      "texturePath": "/assets/dyes/skins/9f35b302a4badd7c84e1ab41e2387e911d66af38f2631e2d53fa1d63d5cc47b0.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#FFCC00§7 and §r#FFC910§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_TREASURE",
+      "name": "Treasure Dye",
+      "texturePath": "/assets/dyes/skins/fcb8622a9ea4dc44fec8804fa075f75ff7c4d9e71de1debfd21d683975437f36.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#FCD12A§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_WARDEN",
+      "name": "Warden Dye",
+      "texturePath": "/assets/dyes/skins/62022037d62a5c27ad7629842176945ac2077c6dd4d8acdf431ddd19b12611c9.png",
+      "lore": "§8Combinable in Anvil\n\n§7Animates the color of an armor piece\n§7between §r#034150§7 and §r#009295§7!\n\n§d§lMYTHIC DYE",
+      "animated": false
+    },
+    {
+      "id": "DYE_WILD_STRAWBERRY",
+      "name": "Wild Strawberry Dye",
+      "texturePath": "/assets/dyes/skins/c9d50ab4b7dd1527f347e8c251e8ef93bf47a6465b936d413d915a85772fba9b.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#FF43A4§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    },
+    {
+      "id": "TENTACLE_DYE",
+      "name": "Tentacle Dye",
+      "texturePath": "/assets/dyes/skins/298bba8068091bfb70d7f97983934b0dea6cf91cc99ea9d14af7e811815c4bf7.png",
+      "lore": "§8Combinable in Anvil\n\n§7Changes the color of an armor piece\n§7to §r#324D6C§7!\n\n§6§lLEGENDARY DYE",
+      "animated": false
+    }
+  ]
+}
